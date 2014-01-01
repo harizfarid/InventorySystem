@@ -1,0 +1,34 @@
+﻿
+
+.datalist
+{
+	background: #FFDE20;
+	border-color: #ffcc00;
+	border-style: dotted;
+	border-width:3px;
+	width: 100%; 
+	margin:2px 0px;
+	font-family: Arial!Important;
+}
+
+.datalisttitle
+{
+	background: #E8CA00;
+	height: 25px;
+	font-family: Arial;
+}
+
+.dashboard_title
+{
+	font-family: Helvetica;
+	font-size: 1.5em;
+	font-weight:bold;
+	color:#fff;
+}
+
+.main_title
+{
+	font-family: Helvetica;
+	text-align:left;
+		
+}

@@ -1,0 +1,75 @@
+﻿ul.sidenav {
+	font-size: 1.2em;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*padding-top: 40px;*/
+	list-style: none;
+	background: #7d7666;
+	border-top: 1px solid #565247;
+	border-bottom: 1px solid #beb6a9;
+	text-align: right;
+	/*
+	-- blue theme
+	background: #005094; 
+	border-bottom: 1px solid #3373a9;
+	border-top: 1px solid #003867;
+	*/
+}
+ul.sidenav li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	width: 82%;
+	padding: 10px 10px 10px 35px;
+	background: url(../sidenav.png) no-repeat 5px 7px;
+	border-top: 1px solid #beb6a9;
+	border-bottom: 1px solid #565247;
+	/*
+	border-top: 1px solid #3373a9;
+	border-bottom: 1px solid #003867;
+
+	*/
+}
+
+ul.sidenav li a:hover 
+{
+	background: #585147 url(../sidenav.png) no-repeat 5px 7px;
+	border-top: 1px solid #807969;
+	/*
+	background: #003867 url(sidenav.png) no-repeat 5px 7px;
+	border-top: 1px solid #1a4c76;
+	*/
+}
+ul.sidenav li span {
+	display: none;
+}
+
+ul.sidenav li a:hover span {
+	display: block;
+	font-size: 0.8em;
+	padding: 10px 0;
+	
+}
+
+.dashboard
+{
+	background: #7d7666 url('../../icons/home.png') no-repeat 12px 5px;
+}
+.mold
+{
+	background: #7d7666 url('../../icons/process.png') no-repeat 12px 5px;
+}
+.customer
+{
+	background: #7d7666 url('../../icons/users.png') no-repeat 12px 5px;
+}
+.product
+{
+	background: #7d7666 url('../../icons/products.png') no-repeat 12px 5px;
+}
+.workorder
+{
+	background: #7d7666 url('../../icons/do.png') no-repeat 12px 5px;
+}

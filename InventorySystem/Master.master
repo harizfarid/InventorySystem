@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Maintenance" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script src="scripts/bootstrap.js"></script>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="xheader">
+            Solid Foundry Inventory System
+        </div>
+        <nav>   
+    <ul>
+      <li><a href="Dashboard.aspx">Dashboard</a></li>
+      <li><a href="../modules/salesorder.aspx">Sales Order</a></li>
+      <li><a href="Dashboard.aspx">Work Order</a></li>
+      <li><a href="Dashboard.aspx">Delivery Order</a></li>
+      <li><a href="Dashboard.aspx">Invoice</a></li>
+      <li>
+        <a href="">Maintenance</a>
+       <ul>
+          <li><a href="../maintenance/customer.aspx">Customer</a></li>
+          <li><a href="../maintenance/material.aspx">Material</a></li>
+          <li><a href="../maintenance/pattern.aspx">Pattern</a></li>
+          <li><a href="../maintenance/supplier.aspx">Supplier</a></li>
+<%--             <li><a href="../maintenance/employee.aspx">Employee </a></li>
+          <li><a href="../maintenance/product.aspx">Product</a></li>--%>
+          <li><a href="">Employee</a></li>
+          <li><a href="">Product</a></li>
+       </ul>
+      </li>
+    </ul>
+    </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,242 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+<#@ include file="MultipleOutput.ttinclude"#>
+<#@ import namespace="System.Reflection"#>
+//Specify your entityframework dll path
+<#@ assembly name="$(ProjectDir)\bin\Debug\EntityFramework.dll"#>
+//Specify your class dll path
+<#@ assembly name="$(ProjectDir)\bin\Debug\InventorySystem.Orders.Data.dll"#>
+//Specify your project namespace
+<#@ import namespace="InventorySystem.Orders.Data"#>
+<#@ output extension=".cs" #>
+
+<#
+//Specify one of your context class name
+var assembly = typeof(InventorySystemOrderContext).Assembly;
+//Specify entity project name for reference
+var entityProjectName = "InventorySystem.Orders.Entities";
+string namespaceName = assembly.GetName().Name;
+var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+var collections = GetSubtypes(assembly,typeof(System.Data.Entity.DbContext));
+var manager = new Manager(Host, GenerationEnvironment,true) { OutputPath = Path.GetDirectoryName(Host.TemplateFile) };
+//fileManager.StartHeader();	
+foreach (var c in collections)
+{
+	//fileManager.StartNewFile("UnitOfWork"+c.Name +".cs");
+	manager.StartBlock("UnitOfWork"+c.Name +".cs");
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Linq.Expressions;      
+using System.Data.Entity;
+using System.Reflection;
+using Dakini.Framework;
+using <#= entityProjectName #>;
+namespace <#= namespaceName#>
+{
+
+	#region unitOfWork <#=c.Name#>
+	public class UnitOfWork<#= c.Name #> :IDisposable,IUnitOfWork<<#= c.Name#>>
+	{
+		public readonly <#= c.Name #> _context;
+
+		public UnitOfWork<#= c.Name #>()
+		{
+			_context = new <#= c.Name #>();
+		}
+
+		public UnitOfWork<#= c.Name #>(<#= c.Name #> context)
+		{
+			_context = context;
+		}
+
+		public int Save()
+		{
+			return _context.SaveChanges();
+		}
+
+		private bool disposedValue = false;
+
+		protected virtual void Dispose(bool disposing)
+		{
+			if (!this.disposedValue)
+			{
+				if (disposing)
+				{
+					_context.Dispose();
+				}
+			}
+			this.disposedValue = true;
+		}
+
+		public void Dispose()
+		{
+			Dispose(true);
+			GC.SuppressFinalize(this);
+		}
+
+		public <#=c.Name#> Context
+		{
+			get { return _context; }
+		}
+	}
+	#endregion
+}
+
+<#manager.EndBlock(); #>
+<#
+    var properties = GetProperties(c);
+    foreach (var property in properties)
+    {
+	manager.StartBlock(property.Name +"Repository.cs");
+#>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Linq.Expressions;      
+using System.Data.Entity;
+using System.Reflection;
+using Datakini.Framework;
+using <#= entityProjectName #>;
+namespace <#= namespaceName#>
+{
+	#region Repository  <#=property.Name#>
+	public interface I<#=property.Name#>Repository : IRepository<<#=property.Name#>> { }
+	
+	public partial class <#=property.Name#>Repository : I<#=property.Name#>Repository
+	{
+		private <#= c.Name #> _context;
+		public <#=property.Name#>Repository(UnitOfWork<#= c.Name #> uow)
+		{
+			_context = uow._context;
+		}
+
+		#region Members
+		public IQueryable<<#=property.Name#>> FindAll
+        {
+            get { return _context.<#=property.Name#>; }
+        }
+
+		public IQueryable<<#=property.Name#>> FindAllIncluding(params System.Linq.Expressions.Expression<Func<<#=property.Name#>, object>>[] includeProperties)
+        {
+            IQueryable<<#=property.Name#>> query = _context.<#=property.Name#>;
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return query;
+        }
+
+		public <#=property.Name#> Find(object id)
+        {
+			Type idType = id.GetType();
+			if(idType == typeof(string))
+			{
+			string stringId = Convert.ToString(id);
+            return _context.<#=property.Name#>.Find(stringId);
+			}
+			else
+			if(idType == typeof(int))
+			{
+			int intId = Convert.ToInt32(id);
+            return _context.<#=property.Name#>.Find(intId);
+			}
+			return null;
+        }
+
+		public void InsertOrUpdate(<#=property.Name#> item)
+        { 
+			List<PropertyInfo> properties = new List<PropertyInfo>();
+		    foreach (var property in item.GetType().GetProperties())
+		    {
+		        if (!property.GetMethod.IsVirtual)
+		        {
+		            properties.Add(property);
+		        }
+		    }
+			string id = properties[0].Name;
+            //Type idType = item.GetType().GetProperties()[0].GetType();
+			Type idType = _context.Entry(item).Property(id).CurrentValue.GetType();
+            object currentValue = _context.Entry(item).Property(id).CurrentValue;
+            if (idType == typeof(string))
+            {
+                if (String.IsNullOrEmpty(currentValue.ToString()))
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Added;
+                }
+                else
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Modified;
+                }
+            }
+            else if (idType == typeof(int))
+            {
+                if (Convert.ToInt32(currentValue) == default(int))
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Added;
+                }
+                else
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Modified;
+                }
+            }
+			 else if(idType == typeof(Guid))
+            {
+                if (!String.IsNullOrEmpty(currentValue.ToString()))
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Added;
+                }
+                else
+                {
+                    _context.Entry(item).State = System.Data.EntityState.Modified;
+                }
+            }
+        }
+
+		public void Delete(int id)
+        {
+            var item = _context.<#=property.Name#>.Find(id);
+            _context.<#=property.Name#>.Remove(item);
+        }
+		#endregion
+	} 
+	#endregion
+}
+<#	manager.EndBlock();
+	}
+
+ #>
+<#} #>
+
+
+
+
+
+
+
+
+
+<#manager.Process(true);  #>
+
+
+
+<#+ 
+public static IEnumerable<Type> GetSubtypes(Assembly assembly, Type parent)
+{
+	return assembly.GetTypes()
+					.Where(parent.IsAssignableFrom);
+}
+#>
+
+<#+  
+public static PropertyInfo[] GetProperties(Type type)
+{
+    PropertyInfo[] props = null;
+    props = type.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+    return props;
+
+}
+#>

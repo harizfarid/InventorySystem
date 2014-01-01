@@ -1,0 +1,41 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:GridView runat="server" SkinId="gridViewSkin" Width="100%" AutoGenerateColumns="False" 
+            BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" 
+            CellPadding="4" ForeColor="Black" GridLines="None">
+            <RowStyle BackColor="#F7F7DE" HorizontalAlign="Center" />
+            <FooterStyle BackColor="#CCCC99" />
+            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
+            <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+
+
+<asp:GridView runat="server" SkinId="gridDashboardSkin" Width="100%" AutoGenerateColumns="False" 
+            BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" 
+            CellPadding="4" ForeColor="Black" GridLines="None">
+            <RowStyle CssClass="RowStyle" />
+            <EmptyDataRowStyle CssClass="EmptyRowStyle" />
+            <PagerStyle CssClass="PagerStyle" />
+            <SelectedRowStyle CssClass="SelectedRowStyle" />
+            <HeaderStyle CssClass="HeaderStyle" />
+            <EditRowStyle CssClass="EditRowStyle" />
+            <AlternatingRowStyle CssClass="AltRowStyle" />
+</asp:GridView>
+
+<asp:Rating runat="server" SkinId="RatingStyle" MaxRating="5" StarCssClass="ratingStar"
+                            WaitingStarCssClass="savedRatingStar" FilledStarCssClass="filledRatingStar" EmptyStarCssClass="emptyRatingStar" />

@@ -1,0 +1,5 @@
+E:\My Documents\Web Applications\InventorySystem\InventorySystem\bin\InventorySystem.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem\bin\InventorySystem.pdb
+E:\My Documents\Web Applications\InventorySystem\InventorySystem\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Web Applications\InventorySystem\InventorySystem\obj\Debug\InventorySystem.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem\obj\Debug\InventorySystem.pdb

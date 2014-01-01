@@ -1,0 +1,260 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".cs" #>
+<#         
+if(Errors.HasErrors)
+{
+    return String.Empty;
+}
+
+CodeGenerationTools code = new CodeGenerationTools(this)
+	{FullyQualifySystemTypes = true, CamelCaseFields = false};
+MetadataLoader loader = new MetadataLoader(this);
+
+string open = "<";
+string close = ">";
+//string SourceCsdlPath = FindEDMXFileName();
+string[] SourceCsdlPath = FindEDMXFileNames();
+ReferenceCsdlPaths = new string[] {};
+string namespaceName = code.VsNamespaceSuggestion();
+#>
+using System;
+using System.Collections.Generic;
+using System.Data.Objects;
+using System.Linq;
+using System.Text;
+using System.Linq.Expressions;
+using System.Data.Entity;
+using Datakini.Framework;
+using <#=GetAssemblyEntities()#>.Entities;
+namespace <#=namespaceName#>
+{
+<#
+foreach (string file in SourceCsdlPath)
+{
+	ItemCollection = loader.CreateEdmItemCollection
+	(file, ReferenceCsdlPaths.ToArray());
+EntityContainer container = ItemCollection.GetItems<EntityContainer>().FirstOrDefault();	 
+#>
+
+	#region entity <#=container.Name#>
+<#	
+	foreach (EntityContainer c in ItemCollection.GetItems<EntityContainer>())
+	{
+#>
+	#region unitOfWork <#=c.Name#>
+	public class UnitOfWork<#= c.Name #> :IDisposable,IUnitOfWork<<#= c.Name#>>
+    {
+        public readonly <#= c.Name #> _context;
+
+        public UnitOfWork<#= c.Name #>()
+        {
+            _context = new <#= c.Name #>();
+        }
+
+        public UnitOfWork<#= c.Name #>(<#= c.Name #> context)
+        {
+            _context = context;
+        }
+
+        public int Save()
+        {
+            return _context.SaveChanges();
+        }
+
+        private bool disposedValue = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposedValue)
+            {
+                if (disposing)
+                {
+                    _context.Dispose();
+                }
+            }
+            this.disposedValue = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+		public <#=c.Name#> Context
+        {
+            get { return _context; }
+        }
+    }
+	#endregion
+	
+<#
+    foreach (EntityType entity in 
+	ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+    {        
+#>
+	#region Repository  <#=entity.Name#>
+	public interface I<#=entity.Name#>Repository : IRepository<<#=entity.Name#>> { }
+	
+	public partial class <#=entity.Name#>Repository : I<#=entity.Name#>Repository
+	{
+		private <#=container.Name#> _context;
+		public <#=entity.Name#>Repository(UnitOfWork<#= c.Name #> uow)
+		{
+			_context = uow._context;
+		}
+
+		#region Members
+		public IQueryable<<#=entity.Name#>> FindAll
+        {
+            get { return _context.<#=entity.Name#>; }
+        }
+
+		public IQueryable<<#=entity.Name#>> FindAllIncluding(params System.Linq.Expressions.Expression<Func<<#=entity.Name#>, object>>[] includeProperties)
+        {
+            IQueryable<<#=entity.Name#>> query = _context.<#=entity.Name#>;
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+            return query;
+        }
+
+		public <#=entity.Name#> Find(object id)
+        {
+			Type idType = id.GetType();
+			if(idType == typeof(string))
+			{
+			string stringId = Convert.ToString(id);
+            return _context.<#=entity.Name#>.Find(stringId);
+			}
+			else
+			if(idType == typeof(int))
+			{
+			int intId = Convert.ToInt32(id);
+            return _context.<#=entity.Name#>.Find(intId);
+			}
+			return null;
+        }
+
+		public void InsertOrUpdate(<#=entity.Name#> item)
+        {
+			Type idType = item.Id.GetType();
+			if(idType == typeof(string))
+			{
+            if (String.IsNullOrEmpty(item.Id.ToString()))
+            {
+                _context.Entry(item).State = System.Data.EntityState.Added;
+            }
+            else
+            {
+                _context.Entry(item).State = System.Data.EntityState.Modified;
+            }
+			}
+			else if(idType == typeof(int))
+			{
+			if (Convert.ToInt32(item.Id) == default(int))
+            {
+                _context.Entry(item).State = System.Data.EntityState.Added;
+            }
+            else
+            {
+                _context.Entry(item).State = System.Data.EntityState.Modified;
+            }
+			}
+        }
+
+		public void Delete(int id)
+        {
+            var item = _context.<#=entity.Name#>.Find(id);
+            _context.<#=entity.Name#>.Remove(item);
+        }
+		#endregion
+
+		#region IDisposable Members
+
+        private bool disposedValue = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposedValue)
+            {
+                if (disposing)
+                {
+                    _context.Dispose();
+                }
+            }
+            this.disposedValue = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        #endregion
+	} 
+	#endregion
+
+<#
+    }
+#>
+<#
+    }
+#>
+	#endregion
+<#
+}
+#>
+}
+<#+
+public string SourceCsdlPath{ get; set; }
+public EdmItemCollection ItemCollection{ get; set; }
+public IEnumerable<string> ReferenceCsdlPaths{ get; set; }
+ 
+string FindEDMXFileName()
+{            
+    //string[] entityFrameworkFiles = Directory.GetFiles(Host.ResolvePath(string.Empty), "*.edmx");
+	string[] entityFrameworkFiles = Directory.GetFiles(Directory.GetParent(Host.ResolvePath(string.Empty)).FullName, "*.edmx",SearchOption.AllDirectories);
+    if(entityFrameworkFiles.Length > 0)
+    {
+        return entityFrameworkFiles[0];
+    }
+    
+    return string.Empty;
+}
+
+#>
+
+<#+
+ 
+string[] FindEDMXFileNames()
+{            
+    //string[] entityFrameworkFiles = Directory.GetFiles(Host.ResolvePath(string.Empty), "*.edmx");
+	string[] entityFrameworkFiles = Directory.GetFiles(Directory.GetParent(Host.ResolvePath(string.Empty)).FullName, "*.edmx",SearchOption.AllDirectories);
+    if(entityFrameworkFiles.Length > 0)
+    {
+        return entityFrameworkFiles;
+    }
+    
+    return null;
+}
+
+#>
+
+<#+
+
+string GetAssemblyEntities()
+{
+	CodeGenerationTools code = new CodeGenerationTools(this);
+	string[] namespaces = code.VsNamespaceSuggestion().Split('.');
+	string assemblyName = "";
+    for (int i = 0; i < namespaces.Count()-1; i++)
+    {
+			 assemblyName = assemblyName + namespaces[i].ToString();
+    }
+	return assemblyName;
+}
+#>

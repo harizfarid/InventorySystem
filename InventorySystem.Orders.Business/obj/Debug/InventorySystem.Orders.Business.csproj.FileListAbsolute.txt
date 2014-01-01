@@ -1,0 +1,14 @@
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Business.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Business.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\obj\Debug\InventorySystem.Orders.Business.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\obj\Debug\InventorySystem.Orders.Business.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Business.dll.config
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Data.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\Datakini.Framework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Data.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\InventorySystem.Orders.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\bin\Debug\Datakini.Framework.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Business\obj\Debug\InventorySystem.Orders.Business.csprojResolveAssemblyReference.cache

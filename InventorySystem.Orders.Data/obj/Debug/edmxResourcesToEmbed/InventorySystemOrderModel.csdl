@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InventorySystemOrderModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="InventorySystemOrderContext" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Customer" EntityType="InventorySystemOrderModel.Customer" />
+    <EntitySet Name="Employee" EntityType="InventorySystemOrderModel.Employee" />
+    <EntitySet Name="Material" EntityType="InventorySystemOrderModel.Material" />
+    <EntitySet Name="Pattern" EntityType="InventorySystemOrderModel.Pattern" />
+    <EntitySet Name="Product" EntityType="InventorySystemOrderModel.Product" />
+    <EntitySet Name="ProductGroup" EntityType="InventorySystemOrderModel.ProductGroup" />
+    <EntitySet Name="SalesOrder" EntityType="InventorySystemOrderModel.SalesOrder" />
+    <EntitySet Name="SalesOrderDetail" EntityType="InventorySystemOrderModel.SalesOrderDetail" />
+    <EntitySet Name="Supplier" EntityType="InventorySystemOrderModel.Supplier" />
+    <AssociationSet Name="FK_SalesOrderDetails_SalesOrder" Association="InventorySystemOrderModel.FK_SalesOrderDetails_SalesOrder">
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+      <End Role="SalesOrderDetails" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrder_Customer" Association="InventorySystemOrderModel.FK_SalesOrder_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrder_Material" Association="InventorySystemOrderModel.FK_SalesOrder_Material">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrder_Product" Association="InventorySystemOrderModel.FK_SalesOrder_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCode" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Postcode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateModified" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="SalesOrders" Relationship="InventorySystemOrderModel.FK_SalesOrder_Customer" FromRole="Customer" ToRole="SalesOrder" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Position" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Department" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="PostalCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Attachment" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="PricePerUnit" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateModified" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="SalesOrders" Relationship="InventorySystemOrderModel.FK_SalesOrder_Material" FromRole="Material" ToRole="SalesOrder" />
+  </EntityType>
+  <EntityType Name="Pattern">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierId" Type="Int32" />
+    <Property Name="PatternCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PatternMaker" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="OuterDiameter" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="InnerDiameter" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Height" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Width" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Length" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ModificationRemarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateModified" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ProductGroupId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="SupplierId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Image" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="OuterDiameter" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="InnerDiameter" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Height" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Width" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Length" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ModificationRemarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateModified" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="SalesOrders" Relationship="InventorySystemOrderModel.FK_SalesOrder_Product" FromRole="Product" ToRole="SalesOrder" />
+  </EntityType>
+  <EntityType Name="ProductGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SalesOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="MaterialId" Type="Int32" />
+    <Property Name="CustomerPO" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="LeadTime" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="299" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="SalesOrderDetails" Relationship="InventorySystemOrderModel.FK_SalesOrderDetails_SalesOrder" FromRole="SalesOrder" ToRole="SalesOrderDetails" />
+    <NavigationProperty Name="Customer" Relationship="InventorySystemOrderModel.FK_SalesOrder_Customer" FromRole="SalesOrder" ToRole="Customer" />
+    <NavigationProperty Name="Material" Relationship="InventorySystemOrderModel.FK_SalesOrder_Material" FromRole="SalesOrder" ToRole="Material" />
+    <NavigationProperty Name="Product" Relationship="InventorySystemOrderModel.FK_SalesOrder_Product" FromRole="SalesOrder" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SalesOrderId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="299" Unicode="false" FixedLength="false" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="SalesOrder" Relationship="InventorySystemOrderModel.FK_SalesOrderDetails_SalesOrder" FromRole="SalesOrderDetails" ToRole="SalesOrder" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierCode" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Postcode" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateModified" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_SalesOrderDetails_SalesOrder">
+    <End Role="SalesOrder" Type="InventorySystemOrderModel.SalesOrder" Multiplicity="1" />
+    <End Role="SalesOrderDetails" Type="InventorySystemOrderModel.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderDetails">
+        <PropertyRef Name="SalesOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrder_Customer">
+    <End Type="InventorySystemOrderModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="InventorySystemOrderModel.SalesOrder" Role="SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrder_Material">
+    <End Type="InventorySystemOrderModel.Material" Role="Material" Multiplicity="0..1" />
+    <End Type="InventorySystemOrderModel.SalesOrder" Role="SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrder_Product">
+    <End Type="InventorySystemOrderModel.Product" Role="Product" Multiplicity="0..1" />
+    <End Type="InventorySystemOrderModel.SalesOrder" Role="SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

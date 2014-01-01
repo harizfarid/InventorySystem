@@ -1,0 +1,8 @@
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\bin\Debug\InventorySystem.Orders.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\bin\Debug\InventorySystem.Orders.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\obj\Debug\InventorySystem.Orders.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\obj\Debug\InventorySystem.Orders.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\bin\Debug\InventorySystem.Orders.Entities.dll.config
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\InventorySystem.Orders.Entities\obj\Debug\InventorySystem.Orders.Entities.csprojResolveAssemblyReference.cache

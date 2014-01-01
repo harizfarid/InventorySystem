@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="E212B46A-83CC-4A3D-9462-475F18DFD198" ModuleId="InventorySystem.Business" />
+  <Module PersistentId="059577AA-860C-4471-9CB4-EF82F5894667" ModuleId="InventorySystem.Data" />
+  <Module PersistentId="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6" ModuleId="InventorySystem" />
+  <Module PersistentId="E5EE81CF-4662-4C16-BD71-9A1EDC473390" ModuleId="UnitTest" />
+  <Module PersistentId="D0D132EC-1C76-441B-9BF0-8FB7CBD06000" ModuleId="InventorySystem.Entities" />
+</Modules>

@@ -1,0 +1,1167 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:control/f:supplier.ascx" caret="498" fromTop="7" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:pattern.aspx.cs" caret="2389" fromTop="64" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:PatternFacade.cs" caret="684" fromTop="0" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:App_Themes/d:Theme/f:StyleSheet.css" caret="5846" fromTop="15" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:SupplierDataAccess.cs" caret="7282" fromTop="7" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:pattern.aspx" caret="6988" fromTop="18" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:supplier.aspx.cs" caret="2217" fromTop="13" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:supplier.aspx" caret="8353" fromTop="20" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:App_Themes/d:Theme/f:Controls.css" caret="321" fromTop="13" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/f:ComingSoon.aspx" caret="497" fromTop="8" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/f:web.config" caret="5955" fromTop="15" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/f:Master.master.cs" caret="0" fromTop="0" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/f:Master.master" caret="0" fromTop="0" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:MaterialFacade.cs" caret="0" fromTop="0" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:MaterialDataAccess.cs" caret="1721" fromTop="23" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:material.aspx.cs" caret="0" fromTop="0" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:material.aspx" caret="1606" fromTop="11" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:CustomerDataAccess.cs" caret="7956" fromTop="29" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:CustomerFacade.cs" caret="0" fromTop="0" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductGroupDataAccess.cs" caret="166" fromTop="7" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:SupplierFacade.cs" caret="0" fromTop="0" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="8505" fromTop="0" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:customer.aspx" caret="5437" fromTop="13" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:customer.aspx.cs" caret="0" fromTop="0" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:ProductFacade.cs" caret="1372" fromTop="16" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductDataAccess.cs" caret="5358" fromTop="19" />
+      <File id="D0D132EC-1C76-441B-9BF0-8FB7CBD06000/f:Product.cs" caret="981" fromTop="15" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="1684" fromTop="11" />
+      <File id="D0D132EC-1C76-441B-9BF0-8FB7CBD06000/f:InventorySystemMaintenanceEntities.Designer.cs" caret="0" fromTop="0" />
+      <File id="D0D132EC-1C76-441B-9BF0-8FB7CBD06000/f:InventorySystemMaintenanceEntities.edmx" caret="363" fromTop="6" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:ProductFacade.cs" caret="2258" fromTop="22" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:ProductFacade.cs" caret="2347" fromTop="24" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="3212" fromTop="21" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="7592" fromTop="16" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="8885" fromTop="24" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="9131" fromTop="24" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="9439" fromTop="23" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="9726" fromTop="22" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="9976" fromTop="22" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="10211" fromTop="22" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="10483" fromTop="24" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="10716" fromTop="21" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="10951" fromTop="21" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="11276" fromTop="20" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="3027" fromTop="20" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="8061" fromTop="9" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="1471" fromTop="20" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="3514" fromTop="19" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx" caret="8514" fromTop="16" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductGroupDataAccess.cs" caret="138" fromTop="7" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductDataAccess.cs" caret="10463" fromTop="21" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductDataAccess.cs" caret="9981" fromTop="17" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductDataAccess.cs" caret="10263" fromTop="27" />
+      <File id="059577AA-860C-4471-9CB4-EF82F5894667/f:ProductDataAccess.cs" caret="277" fromTop="6" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="673" fromTop="9" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="2670" fromTop="12" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="2447" fromTop="20" />
+      <File id="E212B46A-83CC-4A3D-9462-475F18DFD198/f:ProductFacade.cs" caret="1877" fromTop="22" />
+      <File id="D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6/d:maintenance/f:product.aspx.cs" caret="1983" fromTop="17" />
+      <File id="D0D132EC-1C76-441B-9BF0-8FB7CBD06000/f:InventorySystemMaintenanceEntities.edmx" caret="363" fromTop="6" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="GetTextBoxs`0" priority="1" />
+      <Item value="foreach" priority="15" />
+      <Item value="TextBox`0" priority="16" />
+      <Item value="textBox" priority="1" />
+      <Item value="SetText`0" priority="0" />
+      <Item value="Customer" priority="9" />
+      <Item value="CustomerModule`0" priority="3" />
+      <Item value="customerModule" priority="2" />
+      <Item value="new" priority="137" />
+      <Item value="prop" priority="28" />
+      <Item value="string" priority="90" />
+      <Item value="int" priority="53" />
+      <Item value="decimal" priority="29" />
+      <Item value="DateTime`0" priority="18" />
+      <Item value="WorkOrderCollection`0" priority="4" />
+      <Item value="workOrder" priority="48" />
+      <Item value="dr" priority="41" />
+      <Item value="Convert`0" priority="64" />
+      <Item value="ParamArrayAttribute`0" priority="0" />
+      <Item value="PopulateReader`0" priority="7" />
+      <Item value="customers" priority="9" />
+      <Item value="workOrderCollection" priority="0" />
+      <Item value="WorkOrder`0" priority="5" />
+      <Item value="WorkOrderDataAdapter`0" priority="6" />
+      <Item value="workOrderId" priority="0" />
+      <Item value="private" priority="25" />
+      <Item value="MySqlCommand`0" priority="1" />
+      <Item value="_command" priority="0" />
+      <Item value="MySqlParameter`0" priority="1" />
+      <Item value="MySqlDbType`0" priority="2" />
+      <Item value="customer" priority="16" />
+      <Item value="description" priority="8" />
+      <Item value="material" priority="0" />
+      <Item value="quantity" priority="2" />
+      <Item value="castingWeight" priority="1" />
+      <Item value="patternCost" priority="1" />
+      <Item value="machiningCost" priority="2" />
+      <Item value="modificationCost" priority="1" />
+      <Item value="totalCost" priority="1" />
+      <Item value="others" priority="1" />
+      <Item value="deliveryTime" priority="1" />
+      <Item value="remarks" priority="17" />
+      <Item value="if" priority="134" />
+      <Item value="DBNull`0" priority="1" />
+      <Item value="WorkOrderManager`0" priority="5" />
+      <Item value="workOrderManager" priority="2" />
+      <Item value="public" priority="77" />
+      <Item value="return" priority="86" />
+      <Item value="WorkOrderCollection" priority="1" />
+      <Item value="Customer`0" priority="23" />
+      <Item value="lblError" priority="8" />
+      <Item value="false" priority="35" />
+      <Item value="true" priority="26" />
+      <Item value="IUReport" priority="4" />
+      <Item value="MaterialCollection`0" priority="1" />
+      <Item value="MaterialManager`0" priority="0" />
+      <Item value="gvWorkOrder" priority="10" />
+      <Item value="txtCustomerCode" priority="4" />
+      <Item value="id" priority="30" />
+      <Item value="customerId" priority="9" />
+      <Item value="txtDescription" priority="8" />
+      <Item value="ddlMaterial" priority="4" />
+      <Item value="materialId" priority="1" />
+      <Item value="txtQuantity" priority="6" />
+      <Item value="ddlCustomers" priority="10" />
+      <Item value="txtPatternCost" priority="3" />
+      <Item value="txtMachiningCost" priority="3" />
+      <Item value="txtModificationCost" priority="3" />
+      <Item value="txtTotalCost" priority="4" />
+      <Item value="txtDeliveryTime" priority="2" />
+      <Item value="txtRemarks" priority="6" />
+      <Item value="txtCastingWeight" priority="3" />
+      <Item value="txtOthers" priority="2" />
+      <Item value="void" priority="20" />
+      <Item value="PlaceHolder`0" priority="0" />
+      <Item value="placeHolder" priority="1" />
+      <Item value="PlaceHolder" priority="0" />
+      <Item value="ContentPlaceHolder`0" priority="1" />
+      <Item value="contentPlaceHolder" priority="7" />
+      <Item value="ContentPlaceHolder" priority="1" />
+      <Item value="Control`0" priority="12" />
+      <Item value="controls" priority="10" />
+      <Item value="Control" priority="1" />
+      <Item value="Content`0" priority="6" />
+      <Item value="content" priority="2" />
+      <Item value="Content" priority="1" />
+      <Item value="for" priority="3" />
+      <Item value="info" priority="0" />
+      <Item value="c" priority="16" />
+      <Item value="d" priority="0" />
+      <Item value="bool" priority="13" />
+      <Item value="enable" priority="6" />
+      <Item value="SetInfoControls`0" priority="0" />
+      <Item value="FindAllTextBox`0" priority="0" />
+      <Item value="ctrl" priority="2" />
+      <Item value="is" priority="8" />
+      <Item value="else" priority="11" />
+      <Item value="DropDownList`0" priority="14" />
+      <Item value="DisableAllControls`0" priority="0" />
+      <Item value="con" priority="0" />
+      <Item value="this" priority="14" />
+      <Item value="Master" priority="14" />
+      <Item value="ViewState" priority="11" />
+      <Item value="ConfigureReport`0" priority="1" />
+      <Item value="workOrderModule" priority="6" />
+      <Item value="WorkOrderModule" priority="2" />
+      <Item value="WorkOrder" priority="2" />
+      <Item value="null" priority="15" />
+      <Item value="maxId" priority="1" />
+      <Item value="textBoxs" priority="15" />
+      <Item value="List&lt;TextBox&gt;" priority="0" />
+      <Item value="List" priority="19" />
+      <Item value="dropDownLists" priority="6" />
+      <Item value="List&lt;DropDownList&gt;" priority="1" />
+      <Item value="downList" priority="0" />
+      <Item value="GetInfoDropdownlists`0" priority="1" />
+      <Item value="ddl" priority="3" />
+      <Item value="GetInfoTextboxs`0" priority="0" />
+      <Item value="txt" priority="3" />
+      <Item value="text" priority="0" />
+      <Item value="Page`0" priority="0" />
+      <Item value="Page" priority="4" />
+      <Item value="DisableInfoControls`0" priority="3" />
+      <Item value="CalendarExtender1" priority="1" />
+      <Item value="SetInfoControlText`0" priority="1" />
+      <Item value="WorkOrderModule`0" priority="2" />
+      <Item value="btnSave" priority="0" />
+      <Item value="ParseChildrenAttribute`0" priority="0" />
+      <Item value="System" priority="18" />
+      <Item value="try" priority="6" />
+      <Item value="Int32`0" priority="3" />
+      <Item value="Response" priority="7" />
+      <Item value="name" priority="15" />
+      <Item value="odbcParameters" priority="0" />
+      <Item value="CustomerCollection`0" priority="1" />
+      <Item value="_customer" priority="5" />
+      <Item value="CustomerManager`0" priority="1" />
+      <Item value="set" priority="0" />
+      <Item value="value" priority="7" />
+      <Item value="Material`0" priority="12" />
+      <Item value="_Customer" priority="0" />
+      <Item value="_Material" priority="0" />
+      <Item value="_material" priority="2" />
+      <Item value="MaterialModule`0" priority="0" />
+      <Item value="txtSearch" priority="0" />
+      <Item value="workOrders" priority="0" />
+      <Item value="odsWorkOrders" priority="1" />
+      <Item value="HiddenField`0" priority="6" />
+      <Item value="hiddenField" priority="0" />
+      <Item value="OpenConnection`0" priority="9" />
+      <Item value="finally" priority="0" />
+      <Item value="tryf" priority="0" />
+      <Item value="using" priority="86" />
+      <Item value="MySqlConnection`0" priority="1" />
+      <Item value="_myConnection" priority="12" />
+      <Item value="WorkOrderDataAdapter" priority="0" />
+      <Item value="IDisposable`0" priority="2" />
+      <Item value="Web" priority="3" />
+      <Item value="UI" priority="1" />
+      <Item value="WebControls" priority="0" />
+      <Item value="dropDownList" priority="0" />
+      <Item value="static" priority="4" />
+      <Item value="ListBox`0" priority="0" />
+      <Item value="List&lt;Control&gt;" priority="1" />
+      <Item value="a" priority="1" />
+      <Item value="control" priority="7" />
+      <Item value="Helper`0" priority="29" />
+      <Item value="GetControls`0" priority="0" />
+      <Item value="MasterPage`0" priority="1" />
+      <Item value="master" priority="1" />
+      <Item value="placeHolderName" priority="0" />
+      <Item value="companyName" priority="0" />
+      <Item value="address" priority="3" />
+      <Item value="website" priority="3" />
+      <Item value="email" priority="5" />
+      <Item value="fax" priority="2" />
+      <Item value="postalCode" priority="0" />
+      <Item value="country" priority="3" />
+      <Item value="phoneNo" priority="3" />
+      <Item value="gvCustomer" priority="3" />
+      <Item value="myCommand" priority="3" />
+      <Item value="CustomerModule" priority="0" />
+      <Item value="odsCustomer" priority="1" />
+      <Item value="Session" priority="7" />
+      <Item value="Label`0" priority="10" />
+      <Item value="time" priority="1" />
+      <Item value="Request" priority="1" />
+      <Item value="Open" priority="0" />
+      <Item value="_conn" priority="2" />
+      <Item value="myReader" priority="3" />
+      <Item value="ddlCountry" priority="12" />
+      <Item value="Country`0" priority="0" />
+      <Item value="TextField" priority="1" />
+      <Item value="_textField" priority="3" />
+      <Item value="_valueField" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="title" priority="2" />
+      <Item value="SessionPageStatePersister`0" priority="1" />
+      <Item value="SessionState" priority="0" />
+      <Item value="List&lt;int&gt;" priority="0" />
+      <Item value="hour" priority="1" />
+      <Item value="ddlHour" priority="3" />
+      <Item value="GetHours`0" priority="0" />
+      <Item value="ddlMinute" priority="1" />
+      <Item value="GetMinutes`0" priority="0" />
+      <Item value="Chart1" priority="0" />
+      <Item value="Data" priority="21" />
+      <Item value="Sql" priority="0" />
+      <Item value="SqlDataAdapter`0" priority="1" />
+      <Item value="SqlConnection`0" priority="4" />
+      <Item value="SqlCommand`0" priority="7" />
+      <Item value="SqlServerConfig`0" priority="10" />
+      <Item value="Configuration" priority="0" />
+      <Item value="SqlParameter`0" priority="17" />
+      <Item value="SqlDataReader`0" priority="6" />
+      <Item value="IDataReader`0" priority="14" />
+      <Item value="SqlClient" priority="5" />
+      <Item value="SqlDbType`0" priority="1" />
+      <Item value="InventorySystem" priority="28" />
+      <Item value="SqlServerConfig" priority="0" />
+      <Item value="config" priority="0" />
+      <Item value="PurchaseOrderDataAdapter`0" priority="8" />
+      <Item value="query" priority="24" />
+      <Item value="Status" priority="1" />
+      <Item value="adapter" priority="27" />
+      <Item value="PurchaseOrderDataAdapter" priority="5" />
+      <Item value="TestMethod" priority="0" />
+      <Item value="PurchaseOrder`0" priority="20" />
+      <Item value="po" priority="19" />
+      <Item value="parameters" priority="0" />
+      <Item value="Status`0" priority="10" />
+      <Item value="status" priority="17" />
+      <Item value="StatusDataAdapter`0" priority="2" />
+      <Item value="StatusDataAdapter" priority="1" />
+      <Item value="StatusManager`0" priority="1" />
+      <Item value="statusId" priority="0" />
+      <Item value="PurchaseOrderManager`0" priority="0" />
+      <Item value="Business" priority="7" />
+      <Item value="PurchaseOrderModule`0" priority="2" />
+      <Item value="PurchaseOrderModule" priority="1" />
+      <Item value="module" priority="3" />
+      <Item value="PurchaseOrder" priority="2" />
+      <Item value="postcode" priority="4" />
+      <Item value="LookupEntity`0" priority="4" />
+      <Item value="LookupEntity" priority="1" />
+      <Item value="lookup" priority="0" />
+      <Item value="lookUps" priority="2" />
+      <Item value="P" priority="33" />
+      <Item value="purchaseOrder" priority="31" />
+      <Item value="PurchaseOrderCollection`0" priority="0" />
+      <Item value="purchaseOrderCollection" priority="0" />
+      <Item value="collection" priority="3" />
+      <Item value="Dispose`0" priority="1" />
+      <Item value="CustomerDataAdapter`0" priority="1" />
+      <Item value="CustomerDataAdapter" priority="1" />
+      <Item value="e" priority="8" />
+      <Item value="StatusModule`0" priority="1" />
+      <Item value="statusModule" priority="2" />
+      <Item value="StatusModule" priority="0" />
+      <Item value="Label" priority="1" />
+      <Item value="lblStatus" priority="3" />
+      <Item value="const" priority="0" />
+      <Item value="SqlConnection" priority="1" />
+      <Item value="connectionString" priority="0" />
+      <Item value="while" priority="2" />
+      <Item value="GetStatus`0" priority="2" />
+      <Item value="GetCustomers`0" priority="2" />
+      <Item value="lblCustomerId" priority="2" />
+      <Item value="gvPurchaseOrder" priority="8" />
+      <Item value="txtPONo" priority="1" />
+      <Item value="poNo" priority="2" />
+      <Item value="txtDateCreated" priority="1" />
+      <Item value="dateCreated" priority="11" />
+      <Item value="txtCustomerName" priority="2" />
+      <Item value="txtPrice" priority="3" />
+      <Item value="price" priority="2" />
+      <Item value="txtTotalPrice" priority="3" />
+      <Item value="totalPrice" priority="1" />
+      <Item value="txtDeliveryDate" priority="1" />
+      <Item value="deliveryDateTime" priority="1" />
+      <Item value="txtStatus" priority="0" />
+      <Item value="txtCreatedBy" priority="1" />
+      <Item value="createdBy" priority="11" />
+      <Item value="remark" priority="0" />
+      <Item value="username" priority="2" />
+      <Item value="MembershipDataAdapter`0" priority="1" />
+      <Item value="MembershipDataAdapter" priority="1" />
+      <Item value="membership" priority="0" />
+      <Item value="userName" priority="0" />
+      <Item value="ddlStatus" priority="1" />
+      <Item value="lblCustomer" priority="4" />
+      <Item value="hfCustomer" priority="0" />
+      <Item value="custId" priority="2" />
+      <Item value="String`0" priority="55" />
+      <Item value="SqlParameter" priority="15" />
+      <Item value="param" priority="3" />
+      <Item value="param_company" priority="3" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+      <Item value="BigInt" priority="0" />
+      <Item value="param_poNo" priority="1" />
+      <Item value="DateTime" priority="2" />
+      <Item value="Int" priority="3" />
+      <Item value="VarChar" priority="1" />
+      <Item value="Decimal" priority="1" />
+      <Item value="param_dateCreated" priority="1" />
+      <Item value="param_quantity" priority="1" />
+      <Item value="param_remarks" priority="1" />
+      <Item value="param_price" priority="1" />
+      <Item value="param_deliveryDateTime" priority="1" />
+      <Item value="param_totalPrice" priority="1" />
+      <Item value="param_createdBy" priority="1" />
+      <Item value="param_status" priority="1" />
+      <Item value="ex" priority="1" />
+      <Item value="ExecuteReader`0" priority="1" />
+      <Item value="param_id" priority="6" />
+      <Item value="btnSearch" priority="0" />
+      <Item value="odsPurchaseOrder" priority="0" />
+      <Item value="customerCollection" priority="1" />
+      <Item value="CustomerCollection" priority="0" />
+      <Item value="Object`0" priority="1" />
+      <Item value="StatusCollection`0" priority="0" />
+      <Item value="StatusCollection" priority="0" />
+      <Item value="statusCollection" priority="0" />
+      <Item value="customerName" priority="2" />
+      <Item value="reader" priority="8" />
+      <Item value="dataReader" priority="1" />
+      <Item value="connection" priority="0" />
+      <Item value="IOrderedEnumerable" priority="1" />
+      <Item value="Entities" priority="25" />
+      <Item value="Product`0" priority="14" />
+      <Item value="InventorySystemMaintenanceEntities`0" priority="15" />
+      <Item value="InventorySystemMaintenanceEntities" priority="2" />
+      <Item value="ctx" priority="32" />
+      <Item value="var" priority="17" />
+      <Item value="from" priority="3" />
+      <Item value="select" priority="3" />
+      <Item value="q" priority="11" />
+      <Item value="Product" priority="1" />
+      <Item value="item" priority="98" />
+      <Item value="productCode" priority="7" />
+      <Item value="productGroupId" priority="2" />
+      <Item value="supplierId" priority="7" />
+      <Item value="weight" priority="2" />
+      <Item value="object" priority="2" />
+      <Item value="CheckNull`0" priority="7" />
+      <Item value="outerDiameter" priority="4" />
+      <Item value="image" priority="1" />
+      <Item value="innerDiameter" priority="5" />
+      <Item value="height" priority="6" />
+      <Item value="width" priority="5" />
+      <Item value="length" priority="4" />
+      <Item value="dateModified" priority="9" />
+      <Item value="modifiedBy" priority="9" />
+      <Item value="ProductDataAccess`0" priority="2" />
+      <Item value="ProductDataAccess" priority="4" />
+      <Item value="da" priority="6" />
+      <Item value="out" priority="0" />
+      <Item value="Pattern`0" priority="11" />
+      <Item value="patternCode" priority="7" />
+      <Item value="Pattern" priority="0" />
+      <Item value="Supplier`0" priority="17" />
+      <Item value="patternMaker" priority="2" />
+      <Item value="modificationRemarks" priority="2" />
+      <Item value="GCCollectionMode`0" priority="0" />
+      <Item value="PatternDataAccess`0" priority="0" />
+      <Item value="_da" priority="42" />
+      <Item value="PatternDataAccess" priority="5" />
+      <Item value="materialCode" priority="4" />
+      <Item value="Material" priority="1" />
+      <Item value="pricePerUnit" priority="2" />
+      <Item value="attachment" priority="4" />
+      <Item value="MaterialDataAccess`0" priority="0" />
+      <Item value="MaterialDataAccess" priority="6" />
+      <Item value="customerCode" priority="8" />
+      <Item value="company" priority="2" />
+      <Item value="state" priority="2" />
+      <Item value="supplierCode" priority="4" />
+      <Item value="CustomerDataAccess`0" priority="0" />
+      <Item value="CustomerDataAccess" priority="6" />
+      <Item value="SupplierDataAccess`0" priority="6" />
+      <Item value="Eval`0" priority="1" />
+      <Item value="List&lt;Customer&gt;" priority="0" />
+      <Item value="gvCustomers" priority="6" />
+      <Item value="odsCustomers" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="EventArgs`0" priority="0" />
+      <Item value="action" priority="12" />
+      <Item value="Type`0" priority="0" />
+      <Item value="TextBox" priority="0" />
+      <Item value="DisableAllActionBox`0" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="isEnabled" priority="2" />
+      <Item value="RadioButtonList`0" priority="2" />
+      <Item value="rbl" priority="0" />
+      <Item value="HtmlControls" priority="0" />
+      <Item value="HtmlGenericControl`0" priority="0" />
+      <Item value="txtWebsite" priority="2" />
+      <Item value="txtCompany" priority="1" />
+      <Item value="txtPhoneNo" priority="1" />
+      <Item value="txtFax" priority="1" />
+      <Item value="txtEmail" priority="1" />
+      <Item value="txtAddress" priority="1" />
+      <Item value="txtPostcode" priority="1" />
+      <Item value="txtState" priority="1" />
+      <Item value="txtCountry" priority="1" />
+      <Item value="Objects" priority="0" />
+      <Item value="IQueryable`0" priority="0" />
+      <Item value="CustomerFacade`0" priority="1" />
+      <Item value="CustomerFacade" priority="1" />
+      <Item value="facade" priority="3" />
+      <Item value="user" priority="4" />
+      <Item value="hfId" priority="11" />
+      <Item value="lblErrorMessage" priority="4" />
+      <Item value="exception" priority="0" />
+      <Item value="gvSuppliers" priority="2" />
+      <Item value="IQueryable" priority="0" />
+      <Item value="EncoderReplacementFallback`0" priority="0" />
+      <Item value="gvPatterns" priority="2" />
+      <Item value="ddlSupplier" priority="8" />
+      <Item value="PatternFacade`0" priority="3" />
+      <Item value="items" priority="0" />
+      <Item value="txtPatternCode" priority="1" />
+      <Item value="txtPatternMaker" priority="1" />
+      <Item value="txtOuterDiameter" priority="4" />
+      <Item value="txtInnerDiameter" priority="4" />
+      <Item value="txtWidth" priority="7" />
+      <Item value="txtHeight" priority="4" />
+      <Item value="txtLength" priority="4" />
+      <Item value="txtModificationRemarks" priority="2" />
+      <Item value="nullValue" priority="1" />
+      <Item value="SupplierFacade`0" priority="2" />
+      <Item value="txtSupplierCode" priority="1" />
+      <Item value="txtSupplierName" priority="1" />
+      <Item value="code" priority="2" />
+      <Item value="gvMaterials" priority="3" />
+      <Item value="MaterialFacade`0" priority="1" />
+      <Item value="txtMaterialCode" priority="1" />
+      <Item value="txtMaterialName" priority="1" />
+      <Item value="txtPricePerUnit" priority="2" />
+      <Item value="txtAttachment" priority="0" />
+      <Item value="fuAttachment" priority="4" />
+      <Item value="IsAsync" priority="0" />
+      <Item value="WriteToFile`0" priority="0" />
+      <Item value="path" priority="2" />
+      <Item value="Server" priority="2" />
+      <Item value="filename" priority="1" />
+      <Item value="fullPath" priority="1" />
+      <Item value="myData" priority="0" />
+      <Item value="Attach`0" priority="0" />
+      <Item value="btnUpload" priority="1" />
+      <Item value="MaterialFacade" priority="0" />
+      <Item value="ID" priority="0" />
+      <Item value="iMaterial" priority="1" />
+      <Item value="Application" priority="0" />
+      <Item value="HttpContext`0" priority="0" />
+      <Item value="hfAttachment" priority="2" />
+      <Item value="Decimal`0" priority="0" />
+      <Item value="productName" priority="2" />
+      <Item value="productGroup" priority="2" />
+      <Item value="supplier" priority="1" />
+      <Item value="CustomerName" priority="0" />
+      <Item value="SupplierName" priority="0" />
+      <Item value="product" priority="5" />
+      <Item value="ProductGroupName" priority="0" />
+      <Item value="ProductFacade`0" priority="2" />
+      <Item value="txtProductName" priority="1" />
+      <Item value="gvProducts" priority="1" />
+      <Item value="txtProductCode" priority="0" />
+      <Item value="ddlProductGroup" priority="0" />
+      <Item value="OuterDiameter" priority="1" />
+      <Item value="InnerDiameter" priority="1" />
+      <Item value="Height" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="txtWeight" priority="1" />
+      <Item value="Weight" priority="1" />
+      <Item value="Length" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
+      <Item value="Text" priority="106" />
+      <Item value="Enabled" priority="4" />
+      <Item value="Visible" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.WorkOrder">
+      <Item value="Id" priority="5" />
+      <Item value="Customer" priority="1" />
+      <Item value="Description" priority="2" />
+      <Item value="Material" priority="3" />
+      <Item value="Quantity" priority="3" />
+      <Item value="CastingWeight" priority="2" />
+      <Item value="PatternCost" priority="2" />
+      <Item value="ModificationCost" priority="2" />
+      <Item value="MachineCost" priority="1" />
+      <Item value="TotalCost" priority="2" />
+      <Item value="Others" priority="2" />
+      <Item value="DeliveryTime" priority="2" />
+      <Item value="Remarks" priority="2" />
+      <Item value="CustomerId" priority="3" />
+      <Item value="MaterialId" priority="2" />
+      <Item value="MachiningCost" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="CustomerName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="39" />
+      <Item value="ToDecimal`0" priority="25" />
+      <Item value="ToDateTime`0" priority="5" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="DBNull" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.WorkOrderCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.CustomerDataAdapter">
+      <Item value="GetCustomerByCode`0" priority="1" />
+      <Item value="DeleteCustomer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MySql.Data.MySqlClient.MySqlDbType">
+      <Item value="UInt32" priority="0" />
+      <Item value="Int32" priority="0" />
+      <Item value="Decimal" priority="4" />
+      <Item value="DateTime" priority="0" />
+      <Item value="VarChar" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.WorkOrderDataAdapter">
+      <Item value="GetWorkOrderById`0" priority="1" />
+      <Item value="GetWorkOrders`0" priority="0" />
+      <Item value="InsertWorkOrder`0" priority="0" />
+      <Item value="UpdateWorkOrder`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+      <Item value="DeleteWorkOrder`0" priority="0" />
+      <Item value="GetWorkOrdersByCustomerName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlCommand">
+      <Item value="CommandTimeout" priority="0" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+      <Item value="Connection" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DBNull">
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.WorkOrderManager">
+      <Item value="IsWorkOrderExist`0" priority="0" />
+      <Item value="GetWorkOrder`0" priority="0" />
+      <Item value="GetWorkOrders`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="GetWorkOrdersByCustomerName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Label">
+      <Item value="Visible" priority="3" />
+      <Item value="Text" priority="61" />
+      <Item value="CssClass" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.Web.CrystalReportSource">
+      <Item value="ReportDocument" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.CrystalReports.Engine.ReportDocument">
+      <Item value="DataSourceConnections" priority="2" />
+      <Item value="PrintToPrinter`0" priority="0" />
+      <Item value="PrintOptions" priority="0" />
+      <Item value="ParameterFields" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.Shared.IConnectionInfo">
+      <Item value="SetConnection`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MaterialCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MaterialManager">
+      <Item value="GetMaterials`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WorkOrder">
+      <Item value="gvWorkOrder" priority="0" />
+      <Item value="FindControl`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.DropDownList">
+      <Item value="SelectedValue" priority="13" />
+      <Item value="Enabled" priority="9" />
+      <Item value="SelectedItem" priority="5" />
+      <Item value="DataSource" priority="2" />
+      <Item value="DataBind`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ContentPlaceHolder">
+      <Item value="FindControl`0" priority="0" />
+      <Item value="Controls" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.HtmlControls.HtmlGenericControl">
+      <Item value="Controls" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.Control">
+      <Item value="Visible" priority="1" />
+      <Item value="Controls" priority="1" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CrystalDecisions.Shared.ExportFormatType">
+      <Item value="Excel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.WorkOrderModule">
+      <Item value="Save`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="GetWorkOrdersByCustomerName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ListItem">
+      <Item value="Selected" priority="0" />
+      <Item value="Text" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.Page">
+      <Item value="IsPostBack" priority="2" />
+      <Item value="Controls" priority="0" />
+      <Item value="Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AjaxControlToolkit.CalendarExtender">
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.GridView">
+      <Item value="Enabled" priority="0" />
+      <Item value="DataBind`0" priority="15" />
+      <Item value="DataSourceID" priority="3" />
+      <Item value="DataSource" priority="2" />
+      <Item value="RowCancelingEdit" priority="0" />
+      <Item value="DataMember" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.CrystalReports.Engine.PrintOptions">
+      <Item value="PrinterName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Button">
+      <Item value="Enabled" priority="0" />
+      <Item value="Visible" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="TryParse`0" priority="0" />
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Redirect`0" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.Customer">
+      <Item value="Id" priority="5" />
+      <Item value="CompanyName" priority="0" />
+      <Item value="Country" priority="1" />
+      <Item value="Company" priority="3" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.CustomerModule">
+      <Item value="GetCustomerByCode`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="GetCustomerById`0" priority="0" />
+      <Item value="GetCustomers`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MaterialModule">
+      <Item value="GetMaterial`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.HiddenField">
+      <Item value="Value" priority="19" />
+      <Item value="TemplateControl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlConnection">
+      <Item value="Close`0" priority="9" />
+      <Item value="Open`0" priority="0" />
+      <Item value="State" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="5" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="FirstOrDefault`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Helper">
+      <Item value="EnableControls`0" priority="12" />
+      <Item value="GetControlsInPlaceHolder`0" priority="5" />
+      <Item value="SetControlsValue`0" priority="0" />
+      <Item value="SetMainTitle`0" priority="1" />
+      <Item value="SetTextControls`0" priority="1" />
+      <Item value="SaveRecordMessage`0" priority="1" />
+      <Item value="DeleteRecordMessage`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.MasterPage">
+      <Item value="FindControl`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.CustomerManager">
+      <Item value="Delete`0" priority="0" />
+      <Item value="GetCustomersById`0" priority="0" />
+      <Item value="GetCustomers`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.MySqlConfig">
+      <Item value="ExecuteNonQuery`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ObjectDataSource">
+      <Item value="DataBind`0" priority="0" />
+      <Item value="DataObjectTypeName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="QueryString" priority="0" />
+      <Item value="Url" priority="0" />
+      <Item value="ApplicationPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString`0" priority="3" />
+      <Item value="Contains`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MySql.Data.MySqlClient.MySqlConnection">
+      <Item value="ClearAllPools`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MySql.Data.MySqlClient.MySqlDataReader">
+      <Item value="Close`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.control_country_ascx">
+      <Item value="TextField" priority="1" />
+      <Item value="ControlCountry" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.GridViewRow">
+      <Item value="RowIndex" priority="3" />
+      <Item value="FindControl`0" priority="1" />
+      <Item value="DataItem" priority="1" />
+      <Item value="Attributes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Country">
+      <Item value="TextField" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.SessionState.HttpSessionState">
+      <Item value="Abandon`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.DataVisualization.Charting.Chart">
+      <Item value="DataBind`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.SqlDbType">
+      <Item value="Int" priority="6" />
+      <Item value="VarChar" priority="4" />
+      <Item value="Variant" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.SqlServerConfig">
+      <Item value="_myConnection" priority="0" />
+      <Item value="IsServerConnected`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.PurchaseOrderDataAdapter">
+      <Item value="GetPurchaseOrders`0" priority="3" />
+      <Item value="GetPurchaseOrderById`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="IsExist`0" priority="1" />
+      <Item value="UpdatePurchaseOrder`0" priority="0" />
+      <Item value="InsertPurchaseOrder`0" priority="0" />
+      <Item value="DeletePurchaseOrder`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.PurchaseOrder">
+      <Item value="Id" priority="6" />
+      <Item value="PONo" priority="2" />
+      <Item value="Price" priority="2" />
+      <Item value="CustomerId" priority="5" />
+      <Item value="DateCreated" priority="2" />
+      <Item value="Quantity" priority="2" />
+      <Item value="DeliveryDateTime" priority="2" />
+      <Item value="TotalPrice" priority="2" />
+      <Item value="CreatedBy" priority="2" />
+      <Item value="Status" priority="4" />
+      <Item value="Remarks" priority="2" />
+      <Item value="CustomerInfo" priority="0" />
+      <Item value="StatusInfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.Status">
+      <Item value="Name" priority="3" />
+      <Item value="Id" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.StatusDataAdapter">
+      <Item value="GetStatusById`0" priority="1" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="GetStatus`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.StatusManager">
+      <Item value="GetStatusById`0" priority="0" />
+      <Item value="GetStatus`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.StatusModule">
+      <Item value="GetStatusById`0" priority="2" />
+      <Item value="GetStatus`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.PurchaseOrderManager">
+      <Item value="GetPurchaseOrderById`0" priority="1" />
+      <Item value="GetPurchaseOrdes`0" priority="0" />
+      <Item value="isExist`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="IsExist`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.PurchaseOrderModule">
+      <Item value="GetPurchaseOrderById`0" priority="0" />
+      <Item value="GetPurchaseOrders`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="GetMaxId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.LookupEntity">
+      <Item value="Id" priority="0" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.IDataReader">
+      <Item value="Dispose`0" priority="3" />
+      <Item value="Read`0" priority="6" />
+      <Item value="GetValue`0" priority="0" />
+      <Item value="FieldCount" priority="1" />
+      <Item value="Depth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlConnection">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="Open`0" priority="0" />
+      <Item value="Close`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PurchasedOrder">
+      <Item value="gvPurchaseOrder" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.GridViewRowEventArgs">
+      <Item value="Row" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlCommand">
+      <Item value="ExecuteReader`0" priority="0" />
+      <Item value="Connection" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.StatusCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="FirstOrDefault`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.CustomerCollection">
+      <Item value="FirstOrDefault`1" priority="3" />
+      <Item value="First`1" priority="0" />
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.Membership">
+      <Item value="Username" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.MembershipDataAdapter">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="GetMembershipByUsername`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MembershipManager">
+      <Item value="GetMembershipByUsername`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MembershipModule">
+      <Item value="GetMembershipByUsername`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+      <Item value="Empty" priority="2" />
+      <Item value="IsNullOrEmpty`0" priority="48" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameter">
+      <Item value="SqlValue" priority="1" />
+      <Item value="ParameterName" priority="0" />
+      <Item value="Value" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.PurchaseOrderCollection">
+      <Item value="OrderBy`2" priority="1" />
+      <Item value="OrderByDescending`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.InventorySystemMaintenanceEntities">
+      <Item value="Product" priority="4" />
+      <Item value="AddToProduct`0" priority="0" />
+      <Item value="SaveChanges`0" priority="5" />
+      <Item value="Pattern" priority="4" />
+      <Item value="AddToPattern`0" priority="0" />
+      <Item value="Material" priority="5" />
+      <Item value="AddToMaterial`0" priority="0" />
+      <Item value="Customer" priority="6" />
+      <Item value="AddToCustomer`0" priority="0" />
+      <Item value="Supplier" priority="4" />
+      <Item value="AddToSupplier`0" priority="0" />
+      <Item value="DeleteObject`0" priority="0" />
+      <Item value="ProductGroup" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="OrderBy`2" priority="5" />
+      <Item value="ToList`1" priority="4" />
+      <Item value="Where`1" priority="5" />
+      <Item value="AsQueryable`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.Product">
+      <Item value="Name" priority="4" />
+      <Item value="ProductCode" priority="3" />
+      <Item value="ProductGroupId" priority="3" />
+      <Item value="CustomerId" priority="3" />
+      <Item value="SupplierId" priority="3" />
+      <Item value="Description" priority="1" />
+      <Item value="Weight" priority="0" />
+      <Item value="OuterDiameter" priority="1" />
+      <Item value="Id" priority="2" />
+      <Item value="Image" priority="0" />
+      <Item value="InnerDiameter" priority="1" />
+      <Item value="Height" priority="1" />
+      <Item value="Width" priority="2" />
+      <Item value="Length" priority="1" />
+      <Item value="DateCreated" priority="0" />
+      <Item value="DateModified" priority="0" />
+      <Item value="CreatedBy" priority="0" />
+      <Item value="ModifiedBy" priority="0" />
+      <Item value="Remarks" priority="0" />
+      <Item value="LoadCustomer`0" priority="0" />
+      <Item value="LoadSupplier`0" priority="0" />
+      <Item value="LoadProductGroupName`0" priority="0" />
+      <Item value="ModificationRemarks" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectQuery`1">
+      <Item value="FirstOrDefault`1" priority="10" />
+      <Item value="First`1" priority="2" />
+      <Item value="Where`0" priority="0" />
+      <Item value="AsQueryable`0" priority="1" />
+      <Item value="Include`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.ProductDataAccess">
+      <Item value="GetProducts`0" priority="0" />
+      <Item value="GetProductById`0" priority="0" />
+      <Item value="GetProductByProductCode`0" priority="0" />
+      <Item value="Update`0" priority="0" />
+      <Item value="Insert`0" priority="1" />
+      <Item value="GetFilteredProducts`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="Value" priority="6" />
+      <Item value="HasValue" priority="5" />
+      <Item value="ToString`0" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Date" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.Pattern">
+      <Item value="PatternCode" priority="4" />
+      <Item value="Id" priority="3" />
+      <Item value="SupplierId" priority="1" />
+      <Item value="PatternMaker" priority="1" />
+      <Item value="OuterDiameter" priority="1" />
+      <Item value="InnerDiameter" priority="1" />
+      <Item value="Height" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="Length" priority="2" />
+      <Item value="ModificationRemarks" priority="1" />
+      <Item value="DateCreated" priority="0" />
+      <Item value="DateModified" priority="0" />
+      <Item value="CreatedBy" priority="0" />
+      <Item value="ModifiedBy" priority="0" />
+      <Item value="Remarks" priority="0" />
+      <Item value="Price" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.PatternDataAccess">
+      <Item value="GetPatternById`0" priority="0" />
+      <Item value="GetPatternByCode`0" priority="0" />
+      <Item value="GetPatternByPatternCode`0" priority="0" />
+      <Item value="GetPatterns`0" priority="0" />
+      <Item value="Insert`0" priority="1" />
+      <Item value="Update`0" priority="0" />
+      <Item value="GetFilteredPatterns`0" priority="0" />
+      <Item value="Delete`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.Material">
+      <Item value="Id" priority="2" />
+      <Item value="MaterialCode" priority="3" />
+      <Item value="Name" priority="2" />
+      <Item value="Description" priority="1" />
+      <Item value="PricePerUnit" priority="1" />
+      <Item value="Attachment" priority="5" />
+      <Item value="DateCreated" priority="0" />
+      <Item value="DateModified" priority="0" />
+      <Item value="CreatedBy" priority="0" />
+      <Item value="ModifiedBy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.MaterialDataAccess">
+      <Item value="GetMaterialById`0" priority="0" />
+      <Item value="GetMaterialByMaterialCode`0" priority="0" />
+      <Item value="GetMaterials`0" priority="0" />
+      <Item value="Update`0" priority="0" />
+      <Item value="Insert`0" priority="0" />
+      <Item value="GetFilteredMaterials`0" priority="0" />
+      <Item value="UpdateAttachment`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.Customer">
+      <Item value="Name" priority="6" />
+      <Item value="Id" priority="6" />
+      <Item value="CustomerCode" priority="4" />
+      <Item value="Company" priority="2" />
+      <Item value="PhoneNo" priority="1" />
+      <Item value="Fax" priority="1" />
+      <Item value="Email" priority="2" />
+      <Item value="Address" priority="1" />
+      <Item value="Postcode" priority="1" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="State" priority="1" />
+      <Item value="Country" priority="1" />
+      <Item value="Website" priority="1" />
+      <Item value="Remarks" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Entities.Supplier">
+      <Item value="SupplierCode" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.CustomerDataAccess">
+      <Item value="GetCustomerById`0" priority="0" />
+      <Item value="GetCustomerByCustomerCode`0" priority="0" />
+      <Item value="GetCustomers`0" priority="0" />
+      <Item value="Update`0" priority="0" />
+      <Item value="Insert`0" priority="0" />
+      <Item value="GetFilteredCustomers`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Data.SupplierDataAccess">
+      <Item value="GetSupplierById`0" priority="0" />
+      <Item value="GetSupplierBySupplierCode`0" priority="0" />
+      <Item value="GetFilteredSuppliers`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.GridViewCommandEventArgs">
+      <Item value="CommandName" priority="1" />
+      <Item value="CommandArgument" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.CustomerFacade">
+      <Item value="GetCustomers`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.RadioButtonList">
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectQuery">
+      <Item value="AsQueryable`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.PatternFacade">
+      <Item value="GetPatterns`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ASP.control_supplier_ascx">
+      <Item value="ddlId" priority="3" />
+      <Item value="SetEnable" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.SupplierFacade">
+      <Item value="GetSuppliers`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.MaterialFacade">
+      <Item value="GetMaterials`0" priority="0" />
+      <Item value="UpdateAttachment`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.FileUpload">
+      <Item value="Visible" priority="1" />
+      <Item value="PostedFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpServerUtility">
+      <Item value="MapPath`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Image">
+      <Item value="ImageUrl" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="AbsolutePath" priority="0" />
+      <Item value="Host" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Request" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InventorySystem.Business.ProductFacade">
+      <Item value="GetProducts`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

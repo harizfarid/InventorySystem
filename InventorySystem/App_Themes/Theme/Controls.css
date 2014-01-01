@@ -1,0 +1,340 @@
+﻿.txtBoxSearch
+{
+	/*
+	BORDER-RIGHT: #000000 1px solid; 
+	BORDER-TOP: #000000 1px solid; 
+	
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: #000000 1px solid;
+	COLOR: #000000; 
+	BORDER-BOTTOM: #000000 1px solid; 
+	FONT-FAMILY: Verdana; 
+	TEXT-DECORATION: none;
+	*/
+	background:#FFFFFF url('../../images/search.png') no-repeat 4px 4px;
+	padding:4px 4px 4px 34px;
+	border:1px solid #CCCCCC;
+	width:160px;
+	height:20px;
+	font-family : Helvetica;
+	text-transform:uppercase;
+	font-size:10pt;
+	color:Gray;
+}
+.lblWarning
+{
+	background:transparent url('../../images/warning.png') no-repeat 4px 4px;
+	padding:6px 0px 0px 24px;
+	border:none;
+	width:10px;
+	height:10px;
+}
+
+
+.txtBoxSearch2 {
+	background:transparent url('../../images/Searchbox.png') no-repeat top left;
+	height: 30px;
+	width: 220px;
+	border: none;
+	outline:none;
+}
+
+.txtBoxNormal
+{
+	/*padding:4px 4px 4px 22px;*/
+	border:1px solid #565247;
+	width:200px;
+	height:20px;
+	text-decoration:none;
+}
+
+.btnLink
+{
+	font-family: Helvetica;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+.ddlNormal
+{
+	border:1px solid #565247;
+	width:200px;
+	height:20px;
+	text-decoration:none;
+}
+
+/*
+.button 
+{
+	display:block;
+	width:250px;
+	height:50px;
+	text-indent:-9999px;
+}
+*/
+.button 
+{
+	background:transparent url('../../images/btnSearch2.png') no-repeat top left;
+	outline:none;
+	width: 120px;
+	height: 30px;
+	border: none;
+	text-align: right;
+}
+.button:hover {
+	background-position:0 -30px;
+}
+
+.button:active 
+{
+    background-position:0 -60px;
+}
+
+
+/*refresh*/
+.button_refresh
+{
+	background:transparent url('../../btn/btnRefresh.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_refresh:hover
+{
+	background-position:0 -80px;
+}
+.button_refresh:active
+{
+	background-position:0 -160px;
+}
+/*refresh*/
+
+
+/*add*/
+.button_add 
+{
+	background:transparent url('../../btn/btnAdd.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_add:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_add:active 
+{
+    background-position:0 -160px;
+}
+/*add*/
+
+
+/*remove*/
+.button_remove
+{
+	background:transparent url('../../btn/btnRemove.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_remove:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_remove:active 
+{
+    background-position:0 -160px;
+}
+/*remove*/
+
+/*save*/
+.button_save
+{
+	background:transparent url('../../btn/btnSave.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_save:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_save:active 
+{
+    background-position:0 -160px;
+}
+/*save*/
+
+/*edit*/
+.button_edit
+{
+	background:transparent url('../../btn/btnEdit.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_edit:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_edit:active 
+{
+    background-position:0 -160px;
+}
+/*edit*/
+
+
+
+/*print*/
+.button_print
+{
+	background:transparent url('../../btn/btnPrint.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_print:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_print:active 
+{
+    background-position:0 -160px;
+}
+/*print*/
+
+/*export pdf*/
+.button_exportPdf
+{
+	background:transparent url('../../btn/btnPDF.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_exportPdf:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_exportPdf:active 
+{
+    background-position:0 -160px;
+}
+/*export pdf*/
+
+/*export excel*/
+.button_exportExcel
+{
+	background:transparent url('../../btn/btnExcel.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_exportExcel:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_exportExcel:active 
+{
+    background-position:0 -160px;
+}
+/*export excel*/
+
+/*attachment*/
+.button_attach
+{
+	background:transparent url('../../btn/btnAttachment.png') no-repeat top left;
+	outline:none;
+	width: 80px;
+	height: 80px;
+	border: none;
+}
+.button_attach:hover 
+{
+	background-position:0 -80px;
+}
+
+.button_attach:active 
+{
+    background-position:0 -160px;
+}
+/*attachment*/
+
+/*login*/
+.button_login
+{
+	background:transparent url('../../btn/btnLogin.png') no-repeat top left;
+	outline:none;
+	width: 120px;
+	height: 30px;
+	border: none;
+	text-align: right;
+}
+.button_login:hover {
+	background-position:0 -30px;
+}
+
+.button_login:active 
+{
+    background-position:0 -60px;
+}
+/*login*/
+
+
+/*submit*/
+.button_submit
+{
+	background:transparent url('../../btn/btnSubmit.png') no-repeat top left;
+	outline:none;
+	width: 120px;
+	height: 30px;
+	border: none;
+	text-align: right;
+}
+.button_submit:hover {
+	background-position:0 -30px;
+}
+
+.button_submit:active 
+{
+    background-position:0 -60px;
+}
+/*submit*/
+
+
+/*cancel*/
+.button_cancel
+{
+	background:transparent url('../../btn/btnCancel.png') no-repeat top left;
+	outline:none;
+	width: 120px;
+	height: 30px;
+	border: none;
+	text-align: right;
+}
+.button_cancel:hover {
+	background-position:0 -30px;
+}
+
+.button_cancel:active 
+{
+    background-position:0 -60px;
+}
+/*cancel*/
+
+

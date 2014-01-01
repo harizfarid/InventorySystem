@@ -1,0 +1,26 @@
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.pdb
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.pdb
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll.config
+C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll.config
+C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll
+C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.pdb
+C:\InventorySystem\InventorySystem.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.dll
+C:\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.pdb
+C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Entities.dll
+C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll.config
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Data\obj\Debug\InventorySystem.Data.csprojResolveAssemblyReference.cache
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\Datakini.Framework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Data\bin\Debug\Datakini.Framework.pdb

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InventorySystemProcessEntitiesModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="InventorySystemProcessEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="SalesOrder" EntityType="InventorySystemProcessEntitiesModel.SalesOrder" />
+    <EntitySet Name="SalesOrderDetail" EntityType="InventorySystemProcessEntitiesModel.SalesOrderDetail" />
+    <AssociationSet Name="FK_SalesOrderDetails_SalesOrder" Association="InventorySystemProcessEntitiesModel.FK_SalesOrderDetails_SalesOrder">
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+      <End Role="SalesOrderDetails" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SalesOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="MaterialId" Type="Int32" />
+    <Property Name="CustomerPO" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="LeadTime" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="299" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="SalesOrderDetails" Relationship="InventorySystemProcessEntitiesModel.FK_SalesOrderDetails_SalesOrder" FromRole="SalesOrder" ToRole="SalesOrderDetails" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SalesOrderId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="299" Unicode="false" FixedLength="false" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="SalesOrder" Relationship="InventorySystemProcessEntitiesModel.FK_SalesOrderDetails_SalesOrder" FromRole="SalesOrderDetails" ToRole="SalesOrder" />
+  </EntityType>
+  <Association Name="FK_SalesOrderDetails_SalesOrder">
+    <End Role="SalesOrder" Type="InventorySystemProcessEntitiesModel.SalesOrder" Multiplicity="1" />
+    <End Role="SalesOrderDetails" Type="InventorySystemProcessEntitiesModel.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderDetails">
+        <PropertyRef Name="SalesOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

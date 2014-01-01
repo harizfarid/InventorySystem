@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E212B46A-83CC-4A3D-9462-475F18DFD198}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventorySystem.Business</RootNamespace>
+    <AssemblyName>InventorySystem.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization.cs" />
+    <Compile Include="AuthorizationCollection.cs" />
+    <Compile Include="AuthorizationManager.cs" />
+    <Compile Include="AuthorizationModule.cs" />
+    <Compile Include="Cast.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerCollection.cs" />
+    <Compile Include="CustomerFacade.cs" />
+    <Compile Include="CustomerManager.cs" />
+    <Compile Include="CustomerModule.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeCollection.cs" />
+    <Compile Include="EmployeeManager.cs" />
+    <Compile Include="EmployeeModule.cs" />
+    <Compile Include="LookupEntity.cs" />
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialCollection.cs" />
+    <Compile Include="MaterialFacade.cs" />
+    <Compile Include="MaterialManager.cs" />
+    <Compile Include="MaterialModule.cs" />
+    <Compile Include="Membership.cs" />
+    <Compile Include="MembershipManager.cs" />
+    <Compile Include="MembershipModule.cs" />
+    <Compile Include="PatternFacade.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductFacade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="PurchaseOrderCollection.cs" />
+    <Compile Include="PurchaseOrderManager.cs" />
+    <Compile Include="PurchaseOrderModule.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="StatusCollection.cs" />
+    <Compile Include="StatusManager.cs" />
+    <Compile Include="StatusModule.cs" />
+    <Compile Include="SupplierFacade.cs" />
+    <Compile Include="WorkOrder.cs" />
+    <Compile Include="WorkOrderCollection.cs" />
+    <Compile Include="WorkOrderManager.cs" />
+    <Compile Include="WorkOrderModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InventorySystemDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InventorySystem.Data\InventorySystem.Data.csproj">
+      <Project>{059577AA-860C-4471-9CB4-EF82F5894667}</Project>
+      <Name>InventorySystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InventorySystem.Entities\InventorySystem.Entities.csproj">
+      <Project>{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}</Project>
+      <Name>InventorySystem.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.pdb
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.pdb
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.dll
+E:\My Documents\Web Applications\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.pdb
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.pdb
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.dll
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.pdb
+C:\InventorySystem\InventorySystem.Business\obj\Debug\ResolveAssemblyReference.cache
+C:\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.dll
+C:\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.pdb
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Entities.dll
+C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Data.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\obj\Debug\InventorySystem.Business.csprojResolveAssemblyReference.cache
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\Datakini.Framework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\Datakini.Framework.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll.config

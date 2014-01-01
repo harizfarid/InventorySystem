@@ -1,0 +1,268 @@
+﻿body
+{
+	font-family:arial, verdana, sans-serif;
+	font-size: 12px;
+}
+
+#container
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200px;
+	text-align: center;
+}
+
+div#header
+{
+	background: #7d7666;
+	width: 100%;
+	height: 70px;
+	position: relative;
+	float:left;
+	/*border-bottom: 1px solid #beb6a9;*/
+}
+
+div#headerleft
+{
+	/*background: #7d7666 url('../images/sflogo.png');*/
+	
+	background: url('../../images/sflogo.png');
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: left;
+}
+div#headerright
+{
+	background: #c4beb2;
+	width: 80%;
+	height: 100%;
+	float: left;
+	text-align: left;
+}	
+
+div#left-container
+{
+	width: 20%;
+	height: 700px;
+	float: left;
+	background: #7d7666;/*
+	border-top: 1px solid #beb6a9;
+	
+	border-color: #5E9DC8;
+	border-color: #FFFFFF;
+	border-style: dotted;
+	border-width:1px;
+	*/
+
+}
+div#right-container
+{
+	width: 80%;
+	float: left;
+	height: 700px;
+	text-align: left;
+	background: #c4beb2;
+	color:#fff;
+	
+	/*
+border-top: 1px solid #beb6a9;
+border-color: #5E9DC8;
+	border-style: dotted;
+	border-width:1px;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-left: 10px;
+	*/
+}
+div#footer
+{
+	position:relative;
+	background: #605c51;
+	width: 100%;
+	height: 20px;
+	float: left;
+	text-align: center;
+	border-top: 1px solid #beb6a9;
+	font-family:arial, verdana, sans-serif;
+	color: #fff;
+}
+
+div#main-title
+{
+	text-align: left;
+	width: 100%;
+	height: 20px;
+	margin-bottom: 25px;
+}
+div#login-view
+{
+	font-size: 1.2em;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*padding-top: 40px;*/
+	list-style: none;
+	background: #7d7666;
+	border-top: 1px solid #beb6a9;
+	text-align: left;
+	color: #fff;
+}
+div#info-view
+{
+	width:99%; 
+	float:left; 
+	position:relative; 
+	text-align: left;
+	height: 250px;
+	margin: 5px 5px 5px 5px;
+	/*background: #F7F6F3;
+	background: #EBF4FA;*/
+	padding-left: 5px;
+	/*border-style: solid;
+	border-width:1px;
+	border-color: #fefdf8;
+	background: #f2f2f2;*/
+	border:none;
+	color: #000;
+	font-family: Helvetica;
+	font-size: 1.2em;
+}
+div#title-right
+{
+	width:37%;
+	float:right;
+	position:relative; 
+	text-align: right;
+	height: 60px;
+	/*background: #F7F6F3;
+	background: #EBF4FA;
+	border-color: #5E9DC8;
+	border-width:1px;*/
+	color:#fff;
+	border:none;
+	font-family: Helvetica;
+
+}
+div#title-left
+{
+	width:63%;
+	float:left;
+	position:relative; 
+	text-align: left;
+	height: 60px;
+	/*background: #F7F6F3;
+	background: #EBF4FA;
+	border-color: #5E9DC8;
+	border-width:1px;*/
+	color:#fff;
+	border:none;
+	font-family: Helvetica;
+}
+
+div#list-view
+{
+	position: relative;
+	float:left;
+	text-align: left;
+	width: 99%;
+	height: 250px;
+	margin: 5px 5px 5px 5px;
+	background: white;
+	overflow: auto;
+	background: #DBDBDB;
+	font-family: Arial;
+	border-color: #fefdf8;
+	background: #f2f2f2;
+	border-style: solid;
+	border-width:1px;
+	color: #000;
+}
+div#button-view
+{
+	position: relative;
+	float:left;
+	text-align: left;
+	width: 99%;
+	margin: 5px 5px 5px 5px;
+	font-family: Arial;
+	/*overflow: auto;
+	background: #DBDBDB;
+	border-color: #fefdf8;
+	background: #f2f2f2;
+	border-style: solid;
+	border-width:1px;*/
+	border:none;
+}
+
+div#button-view
+{
+	position: relative;
+	float:left;
+	text-align: left;
+	width: 99%;
+	margin: 5px 5px 5px 5px;
+	font-family: Arial;
+	border:none;
+	height:auto;
+}
+.title
+{
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: 900;
+
+}
+
+div#dashboard-main
+{
+	position: relative;
+	float:left;
+	text-align: left;
+	width: 99%;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	border-width:1px;
+	color: #000;
+}
+
+div#dashboard-left
+{
+	width:49%; 
+	float:left; 
+	position:relative; 
+	text-align: left;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	border:none;
+	color: #000;
+	font-family: Helvetica;
+}
+
+div#dashboard-right
+{
+	width:48.5%; 
+	float:left; 
+	position:relative; 
+	text-align: left;
+	height: auto;
+	margin: 5px 5px 5px 5px;
+	border:none;
+	color: #000;
+	font-family: Helvetica;
+}
+
+
+.title_text
+{
+	font-family: Helvetica;
+	text-align:left;
+	font-size: 4em;
+}
+	
+
+
+

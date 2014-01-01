@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_Dashboard.master.cs" Inherits="MasterPage_Dashboard" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dashboard</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+            <div id="header">
+            <div id="headerleft">
+            
+            </div>
+            <div id="headerright">
+            <div id="title-left">
+                <asp:Label ID="lblTitle" runat="server" Text=""></asp:Label>
+            </div>
+            <div id="title-right">
+                <!--date will be here-->
+                <asp:ContentPlaceHolder ID="DatePlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            </div>
+        </div>
+        <div id="left-container">
+            <div id="login-view">
+            <table>
+                <tr>
+                    <td>
+                        Login as:
+                    </td>
+                    <td>
+                        <asp:Label ID="lblUserid" runat="server" Text="" Font-Bold="true"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Time Login:
+                    </td>
+                    <td>
+                        <asp:Label ID="lblTime" runat="server" Text=""></asp:Label>
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <asp:LinkButton ID="lkLogout" runat="server" CssClass="btnLink" 
+                            onclick="lkLogout_Click">LOGOUT</asp:LinkButton></td>
+                </tr>       
+            </table>
+            </div>
+            <ul class="sidenav">
+	        <li class="dashboard">
+		        <a href="#">Dashboard
+		        <span>( 仪表盘 )</span>
+		        </a>
+	        </li>
+	        <li class="mold">
+		        <a href="#">Mold Management
+		        <span>( 模具管理 )</span>
+		        </a>
+	        </li>
+	        <li class="customer">
+		        <a href="Customer.aspx">Customer
+		        <span>( 客户 )</span>
+		        </a>
+	        </li>
+	        <li class="product">
+		        <a href="#">Products
+		        <span>( 产品 )</span>
+		        </a>
+	        </li>
+	        <li class="workorder">
+		        <a href="WorkOrder.aspx">Work Order
+		        <span>( 产品 )</span>
+		        </a>
+	        </li>
+        </ul>
+        </div>
+        <div id="right-container">
+            <div id="dashboard-view">
+                <!--dashboard will be here-->
+                <asp:ContentPlaceHolder ID="DashboardPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+    </div>
+    <div id="footer">
+            Solid Foundry Theme, designed by Datakini, 2011.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

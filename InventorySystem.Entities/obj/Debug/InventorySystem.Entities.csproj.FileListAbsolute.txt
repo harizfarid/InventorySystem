@@ -1,0 +1,14 @@
+C:\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.dll.config
+C:\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.dll
+C:\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.pdb
+C:\InventorySystem\InventorySystem.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\InventorySystem\InventorySystem.Entities\obj\Debug\InventorySystem.Entities.dll
+C:\InventorySystem\InventorySystem.Entities\obj\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.dll.config
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\bin\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\obj\Debug\InventorySystem.Entities.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\obj\Debug\InventorySystem.Entities.pdb
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\InventorySystem.Entities\obj\Debug\InventorySystem.Entities.csprojResolveAssemblyReference.cache

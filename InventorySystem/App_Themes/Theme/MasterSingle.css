@@ -1,0 +1,117 @@
+﻿body 
+{
+
+}
+
+div#middle-container
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200px;
+	height: 800px;
+	text-align: center;
+	background: #c4beb2;
+	
+}
+
+div#small-container
+{
+	width: 40%;
+	margin-left: 40%;
+	margin-right: 30%;
+	margin-top: 10%;
+	height:auto;
+	float: left;
+	text-align: left;
+	background: #c4beb2;
+	font-family: Helvetica;
+	font-size: 1em;
+	color:#fff;
+	/*border: 1px dotted #565247;*/
+}
+
+
+/*GridViewCSS Soft Grey Style*/
+.GridViewStyle
+{
+    font-family: Arial, Sans-Serif;
+    font-size:small;
+    table-layout: auto;
+    border-collapse: collapse;
+    border:#91a7b4 1px solid;
+}
+/*Header and Pager styles*/
+.HeaderStyle, .PagerStyle /*Common Styles*/
+{
+    background-position:top;
+    background-repeat:repeat-x;
+    background-color:#585147;
+}
+.HeaderStyle th
+{
+    padding: 5px;
+    color: #fff;
+}
+.HeaderStyle a
+{
+    text-decoration:none;
+    color:#16387c;
+    display:block;
+    text-align:left;
+    font-weight:normal;
+}
+.PagerStyle table
+{
+    text-align:center;
+    margin:auto;
+}
+.PagerStyle table td
+{
+    border:0px;
+    padding:5px;
+}
+.PagerStyle td
+{
+    border-top: #91a7b4 1px solid;
+}
+.PagerStyle a
+{
+    color:#16387c;
+    text-decoration:none;
+    padding:2px 10px 2px 10px;
+    border-top:solid 1px #fff;
+    border-right:solid 1px #91a7b4;
+    border-bottom:solid 1px #91a7b4;
+    border-left:solid 1px #fff;
+}
+.PagerStyle span
+{
+    font-weight:bold;
+    color:#7d7666;
+    text-decoration:none;
+    padding:2px 10px 2px 10px;
+}
+/*RowStyles*/
+.RowStyle td, .AltRowStyle td, .SelectedRowStyle td, .EditRowStyle td /*Common Styles*/
+{
+    padding: 5px;
+    border-right: solid 1px #565247;
+}
+.RowStyle td
+{
+    background-color: #7d7666;
+}
+.AltRowStyle td
+{
+    background-color: #7d7666;
+    background-position:0 -80px;
+    background-repeat:repeat-x;
+}
+.SelectedRowStyle td
+{
+    background-color: #7d7666;
+    background-position:center;
+    background-repeat:repeat-x;
+}

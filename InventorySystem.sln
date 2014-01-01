@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9D21D4BF-FB01-4328-8051-D35019FE55BC}"
+	ProjectSection(SolutionItems) = preProject
+		InventorySystem.vsmdi = InventorySystem.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Data", "InventorySystem.Data\InventorySystem.Data.csproj", "{059577AA-860C-4471-9CB4-EF82F5894667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Business", "InventorySystem.Business\InventorySystem.Business.csproj", "{E212B46A-83CC-4A3D-9462-475F18DFD198}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InventorySystem", "http://localhost/InventorySystem", "{D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{E212B46A-83CC-4A3D-9462-475F18DFD198}|InventorySystem.Business.dll;{059577AA-860C-4471-9CB4-EF82F5894667}|InventorySystem.Data.dll;{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}|InventorySystem.Entities.dll;{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}|Datakini.Framework.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/InventorySystem"
+		Debug.AspNetCompiler.PhysicalPath = "InventorySystem\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\InventorySystem\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/InventorySystem"
+		Release.AspNetCompiler.PhysicalPath = "InventorySystem\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\InventorySystem\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "InventorySystem\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{E5EE81CF-4662-4C16-BD71-9A1EDC473390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Entities", "InventorySystem.Entities\InventorySystem.Entities.csproj", "{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datakini.Framework", "Datakini.Framework\Datakini.Framework.csproj", "{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Orders.Entities", "InventorySystem.Orders.Entities\InventorySystem.Orders.Entities.csproj", "{14EDF2F9-B2EC-4E0B-A51C-ECF4AE0EFAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Orders.Data", "InventorySystem.Orders.Data\InventorySystem.Orders.Data.csproj", "{7EF2EB7C-91F7-4410-8C2E-4D9E1610217A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Orders.Business", "InventorySystem.Orders.Business\InventorySystem.Orders.Business.csproj", "{A319AA75-C5CE-4A66-9275-09A6B8FC9103}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{059577AA-860C-4471-9CB4-EF82F5894667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059577AA-860C-4471-9CB4-EF82F5894667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059577AA-860C-4471-9CB4-EF82F5894667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059577AA-860C-4471-9CB4-EF82F5894667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E212B46A-83CC-4A3D-9462-475F18DFD198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E212B46A-83CC-4A3D-9462-475F18DFD198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E212B46A-83CC-4A3D-9462-475F18DFD198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E212B46A-83CC-4A3D-9462-475F18DFD198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0491A14-F6F9-4E9E-BF1E-A1FEA5C1CBC6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE81CF-4662-4C16-BD71-9A1EDC473390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EE81CF-4662-4C16-BD71-9A1EDC473390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE81CF-4662-4C16-BD71-9A1EDC473390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EE81CF-4662-4C16-BD71-9A1EDC473390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D132EC-1C76-441B-9BF0-8FB7CBD06000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46A14D6-A55B-4E3A-B4F5-8B95F7688F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EDF2F9-B2EC-4E0B-A51C-ECF4AE0EFAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EDF2F9-B2EC-4E0B-A51C-ECF4AE0EFAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EDF2F9-B2EC-4E0B-A51C-ECF4AE0EFAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EDF2F9-B2EC-4E0B-A51C-ECF4AE0EFAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF2EB7C-91F7-4410-8C2E-4D9E1610217A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF2EB7C-91F7-4410-8C2E-4D9E1610217A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF2EB7C-91F7-4410-8C2E-4D9E1610217A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF2EB7C-91F7-4410-8C2E-4D9E1610217A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A319AA75-C5CE-4A66-9275-09A6B8FC9103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A319AA75-C5CE-4A66-9275-09A6B8FC9103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A319AA75-C5CE-4A66-9275-09A6B8FC9103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A319AA75-C5CE-4A66-9275-09A6B8FC9103}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

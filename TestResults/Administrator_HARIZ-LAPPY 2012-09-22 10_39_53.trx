@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3966d4b1-56a4-406e-8af9-4a7048243841" name="Administrator@HARIZ-LAPPY 2012-09-22 10:39:53" runUser="Hariz-Lappy\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="8694a2b3-2d7f-4469-a8b8-eada276acfd2">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\InventorySystem\TestResults\Administrator_HARIZ-LAPPY 2012-09-22 10_39_53">
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll" />
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2012-09-22T10:39:53.7120619+08:00" queuing="2012-09-22T10:39:55.8251828+08:00" start="2012-09-22T10:39:55.9991927+08:00" finish="2012-09-22T10:40:11.0690547+08:00" />
+  <TestDefinitions>
+    <UnitTest name="TestConnection" storage="c:\inventorysystem\unittest\bin\debug\unittest.dll" id="bc2ee1da-8edd-207f-0252-8ea7d1c2640a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="fe9605af-3d0b-4ea9-b2a2-246e05970a34" />
+      <TestMethod codeBase="C:\InventorySystem\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.InventorySystemData, UnitTest" name="TestConnection" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="bc2ee1da-8edd-207f-0252-8ea7d1c2640a" executionId="fe9605af-3d0b-4ea9-b2a2-246e05970a34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fe9605af-3d0b-4ea9-b2a2-246e05970a34" testId="bc2ee1da-8edd-207f-0252-8ea7d1c2640a" testName="TestConnection" computerName="HARIZ-LAPPY" duration="00:00:14.5772115" startTime="2012-09-22T10:39:56.0591962+08:00" endTime="2012-09-22T10:40:10.9780495+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

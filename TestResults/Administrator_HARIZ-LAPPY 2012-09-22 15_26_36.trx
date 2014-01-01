@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="afe478fa-60da-447d-a7aa-85a33b58c6e9" name="Administrator@HARIZ-LAPPY 2012-09-22 15:26:36" runUser="Hariz-Lappy\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="8694a2b3-2d7f-4469-a8b8-eada276acfd2">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\InventorySystem\TestResults\Administrator_HARIZ-LAPPY 2012-09-22 15_26_36">
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll" />
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2012-09-22T15:26:36.2189890+08:00" queuing="2012-09-22T15:26:37.2160461+08:00" start="2012-09-22T15:26:37.3250523+08:00" finish="2012-09-22T15:26:56.9391742+08:00" />
+  <TestDefinitions>
+    <UnitTest name="GetPurchaseOrderById" storage="c:\inventorysystem\unittest\bin\debug\unittest.dll" id="b792eec1-20be-b0fa-b584-ce681f345b53">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="a49bf8aa-9eb8-4140-affc-e45068de4733" />
+      <TestMethod codeBase="C:\InventorySystem\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.InventorySystemBusiness, UnitTest" name="GetPurchaseOrderById" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b792eec1-20be-b0fa-b584-ce681f345b53" executionId="a49bf8aa-9eb8-4140-affc-e45068de4733" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a49bf8aa-9eb8-4140-affc-e45068de4733" testId="b792eec1-20be-b0fa-b584-ce681f345b53" testName="GetPurchaseOrderById" computerName="HARIZ-LAPPY" duration="00:00:17.4674329" startTime="2012-09-22T15:26:37.4850615+08:00" endTime="2012-09-22T15:26:55.3610839+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTest.InventorySystemBusiness.GetPurchaseOrderById threw exception:  System.IndexOutOfRangeException: CompanyName.</Message>
+          <StackTrace>    at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at InventorySystem.Business.CustomerManager.PopulateReader(IDataReader dr) in C:\InventorySystem\InventorySystem.Business\CustomerManager.cs:line 67
+   at InventorySystem.Business.CustomerManager.GetCustomersById(Int32 id) in C:\InventorySystem\InventorySystem.Business\CustomerManager.cs:line 19
+   at InventorySystem.Business.CustomerModule.GetCustomerById(Int32 id) in C:\InventorySystem\InventorySystem.Business\CustomerModule.cs:line 18
+   at InventorySystem.Business.PurchaseOrderManager.PopulateReader(IDataReader dr) in C:\InventorySystem\InventorySystem.Business\PurchaseOrderManager.cs:line 23
+   at InventorySystem.Business.PurchaseOrderManager.GetPurchaseOrderById(Int32 id) in C:\InventorySystem\InventorySystem.Business\PurchaseOrderManager.cs:line 48
+   at InventorySystem.Business.PurchaseOrderModule.GetPurchaseOrderById(Int32 id) in C:\InventorySystem\InventorySystem.Business\PurchaseOrderModule.cs:line 12
+   at UnitTest.InventorySystemBusiness.GetPurchaseOrderById() in C:\InventorySystem\UnitTest\InventorySystemBusiness.cs:line 69
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

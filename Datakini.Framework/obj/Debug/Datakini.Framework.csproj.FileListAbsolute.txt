@@ -1,0 +1,8 @@
+C:\Application\Individual\InventorySystem\Datakini.Framework\bin\Debug\Datakini.Framework.dll.config
+C:\Application\Individual\InventorySystem\Datakini.Framework\bin\Debug\Datakini.Framework.dll
+C:\Application\Individual\InventorySystem\Datakini.Framework\bin\Debug\Datakini.Framework.pdb
+C:\Application\Individual\InventorySystem\Datakini.Framework\bin\Debug\EntityFramework.dll
+C:\Application\Individual\InventorySystem\Datakini.Framework\bin\Debug\EntityFramework.xml
+C:\Application\Individual\InventorySystem\Datakini.Framework\obj\Debug\Datakini.Framework.dll
+C:\Application\Individual\InventorySystem\Datakini.Framework\obj\Debug\Datakini.Framework.pdb
+C:\Application\Individual\InventorySystem\Datakini.Framework\obj\Debug\Datakini.Framework.csprojResolveAssemblyReference.cache

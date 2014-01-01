@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InventorySystemOrderModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="InventorySystemOrderModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="InventorySystemOrderModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="InventorySystemOrderModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Material" EntityType="InventorySystemOrderModel.Store.Material" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pattern" EntityType="InventorySystemOrderModel.Store.Pattern" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Product" EntityType="InventorySystemOrderModel.Store.Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductGroup" EntityType="InventorySystemOrderModel.Store.ProductGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesOrder" EntityType="InventorySystemOrderModel.Store.SalesOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesOrderDetails" EntityType="InventorySystemOrderModel.Store.SalesOrderDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier" EntityType="InventorySystemOrderModel.Store.Supplier" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_SalesOrder_Customer" Association="InventorySystemOrderModel.Store.FK_SalesOrder_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrder_Material" Association="InventorySystemOrderModel.Store.FK_SalesOrder_Material">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrder_Product" Association="InventorySystemOrderModel.Store.FK_SalesOrder_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetails_SalesOrder" Association="InventorySystemOrderModel.Store.FK_SalesOrderDetails_SalesOrder">
+      <End Role="SalesOrder" EntitySet="SalesOrder" />
+      <End Role="SalesOrderDetails" EntitySet="SalesOrderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCode" Type="varchar" MaxLength="150" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+    <Property Name="Company" Type="varchar" MaxLength="150" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Postcode" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeCode" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="Position" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="150" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="PostalCode" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialCode" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="150" />
+    <Property Name="Attachment" Type="varchar" MaxLength="150" />
+    <Property Name="PricePerUnit" Type="decimal" Scale="2" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="150" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Pattern">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierId" Type="int" />
+    <Property Name="PatternCode" Type="varchar" MaxLength="50" />
+    <Property Name="PatternMaker" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Scale="2" />
+    <Property Name="OuterDiameter" Type="decimal" Scale="2" />
+    <Property Name="InnerDiameter" Type="decimal" Scale="2" />
+    <Property Name="Height" Type="decimal" Scale="2" />
+    <Property Name="Width" Type="decimal" Scale="2" />
+    <Property Name="Length" Type="decimal" Scale="2" />
+    <Property Name="ModificationRemarks" Type="varchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="150" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCode" Type="varchar" MaxLength="50" />
+    <Property Name="ProductGroupId" Type="int" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="SupplierId" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="150" />
+    <Property Name="Image" Type="varchar" MaxLength="150" />
+    <Property Name="OuterDiameter" Type="decimal" Scale="2" />
+    <Property Name="InnerDiameter" Type="decimal" Scale="2" />
+    <Property Name="Weight" Type="decimal" Scale="2" />
+    <Property Name="Height" Type="decimal" Scale="2" />
+    <Property Name="Width" Type="decimal" Scale="2" />
+    <Property Name="Length" Type="decimal" Scale="2" />
+    <Property Name="ModificationRemarks" Type="varchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="150" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="ProductGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SalesOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="ProductId" Type="int" />
+    <Property Name="MaterialId" Type="int" />
+    <Property Name="CustomerPO" Type="varchar" MaxLength="150" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" />
+    <Property Name="LeadTime" Type="varchar" MaxLength="150" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="299" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SalesOrderId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="299" />
+    <Property Name="UnitPrice" Type="decimal" Scale="2" />
+    <Property Name="Amount" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="150" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+    <Property Name="Company" Type="varchar" MaxLength="150" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Postcode" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar(max)" />
+  </EntityType>
+  <Association Name="FK_SalesOrder_Customer">
+    <End Role="Customer" Type="InventorySystemOrderModel.Store.Customer" Multiplicity="0..1" />
+    <End Role="SalesOrder" Type="InventorySystemOrderModel.Store.SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrder_Material">
+    <End Role="Material" Type="InventorySystemOrderModel.Store.Material" Multiplicity="0..1" />
+    <End Role="SalesOrder" Type="InventorySystemOrderModel.Store.SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="MaterialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrder_Product">
+    <End Role="Product" Type="InventorySystemOrderModel.Store.Product" Multiplicity="0..1" />
+    <End Role="SalesOrder" Type="InventorySystemOrderModel.Store.SalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrder">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetails_SalesOrder">
+    <End Role="SalesOrder" Type="InventorySystemOrderModel.Store.SalesOrder" Multiplicity="1" />
+    <End Role="SalesOrderDetails" Type="InventorySystemOrderModel.Store.SalesOrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderDetails">
+        <PropertyRef Name="SalesOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

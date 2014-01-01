@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e0d5fb70-4330-48fc-8b02-276511e5698a" name="Administrator@HARIZ-LAPPY 2012-09-22 10:40:38" runUser="Hariz-Lappy\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local Test Run" id="8694a2b3-2d7f-4469-a8b8-eada276acfd2">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="C:\InventorySystem\TestResults\Administrator_HARIZ-LAPPY 2012-09-22 10_40_38">
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Data\bin\Debug\InventorySystem.Data.dll" />
+      <DeploymentItem filename="C:\InventorySystem\InventorySystem.Business\bin\Debug\InventorySystem.Business.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2012-09-22T10:40:38.2326084+08:00" queuing="2012-09-22T10:40:39.0866572+08:00" start="2012-09-22T10:40:39.1946634+08:00" finish="2012-09-22T10:41:34.2918148+08:00" />
+  <TestDefinitions>
+    <UnitTest name="TestConnection" storage="c:\inventorysystem\unittest\bin\debug\unittest.dll" id="bc2ee1da-8edd-207f-0252-8ea7d1c2640a">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="21d219d8-8646-40c6-ba8a-770ac85617f2" />
+      <TestMethod codeBase="C:\InventorySystem\UnitTest\bin\Debug\UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.InventorySystemData, UnitTest" name="TestConnection" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="bc2ee1da-8edd-207f-0252-8ea7d1c2640a" executionId="21d219d8-8646-40c6-ba8a-770ac85617f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="21d219d8-8646-40c6-ba8a-770ac85617f2" testId="bc2ee1da-8edd-207f-0252-8ea7d1c2640a" testName="TestConnection" computerName="HARIZ-LAPPY" duration="00:00:54.4751045" startTime="2012-09-22T10:40:39.3496722+08:00" endTime="2012-09-22T10:41:34.2438120+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method UnitTest.InventorySystemData.TestConnection threw exception:  System.InvalidOperationException: The ConnectionString property has not been initialized..</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.PermissionDemand()
+   at System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at InventorySystem.Data.SqlServerConfig.IsServerConnected() in C:\InventorySystem\InventorySystem.Data\SqlServerConfig.cs:line 97
+   at UnitTest.InventorySystemData.TestConnection() in C:\InventorySystem\UnitTest\InventorySystemData.cs:line 69
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

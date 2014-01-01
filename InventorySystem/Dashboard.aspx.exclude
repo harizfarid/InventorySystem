@@ -1,0 +1,88 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage_Dashboard.master" AutoEventWireup="true"
+    CodeFile="Dashboard.aspx.cs" Inherits="Dashboard" Title="Dashboard" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="DatePlaceHolder" runat="Server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="DashboardPlaceHolder" runat="Server">
+    <div id="dashboard-main">
+        <p class="dashboard_title">Notification of Order:</p>
+        <asp:Chart ID="Chart1" runat="server"  DataSourceID="odsWorkOrder" Width="950px" >
+            <Series>
+                <asp:Series Name="Series1" XValueMember="CustomerId" 
+                    YValueMembers="Quantity" YValuesPerPoint="2">
+                </asp:Series>
+            </Series>
+            <ChartAreas>
+                <asp:ChartArea Name="ChartArea1">
+                    <Area3DStyle Enable3D="True" />
+                </asp:ChartArea>
+            </ChartAreas>
+        </asp:Chart>        
+<%--        <asp:DataList ID="dlWorkOrder" DataSourceID="odsWorkOrder" runat="server" Width="100%"
+            RepeatColumns="1" ShowFooter="False" ShowHeader="False" HorizontalAlign="Left">
+            <ItemTemplate>
+                <table class="datalist">
+                    <tr>
+                        <td class="datalisttitle">
+                            <a href="WorkOrder.aspx">
+                                <%# Eval("Description")%></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Customer Name :
+                            <asp:Label ID="lblCustomerName" runat="server" Text='<%# Bind("Customer.Name") %>'> /></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Delivery Date Time :
+                            <asp:Label ID="lblDeliveryDateTime" runat="server" Text='<%# Bind("DeliveryDateTime") %>'> /></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>--%>
+        <asp:ObjectDataSource ID="odsWorkOrder" runat="server" TypeName="InventorySystem.Business.WorkOrderModule"
+            SelectMethod="GetTop5WorkOrders"></asp:ObjectDataSource>
+    </div>
+    <div id="dashboard-left">
+        <p class="dashboard_title">Top Material:</p>
+        <asp:DataList ID="dlTopMaterial" DataSourceID="odsTopMaterial" runat="server" Width="100%"
+            RepeatColumns="1" ShowFooter="False" ShowHeader="False" HorizontalAlign="Left">
+            <ItemTemplate>
+                <table class="datalist">
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblMaterialName" runat="server" Text='<%# Bind("Material.Name") %>'> /></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:ObjectDataSource ID="odsTopMaterial" runat="server" TypeName="InventorySystem.Business.WorkOrderModule"
+            SelectMethod="GetTop5Materials"></asp:ObjectDataSource>
+    </div>
+    <div id="dashboard-right">
+        <p class="dashboard_title">Top Customer:</p>
+        <asp:DataList ID="dlTopCustomer" DataSourceID="odsTopCustomers" runat="server" Width="100%"
+            RepeatColumns="1" ShowFooter="False" ShowHeader="False" HorizontalAlign="Left">
+            <ItemTemplate>
+                <table class="datalist">
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblCustomerName" runat="server" Text='<%# Bind("Customer.Name") %>'> /></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:ObjectDataSource ID="odsTopCustomers" runat="server" TypeName="InventorySystem.Business.WorkOrderModule"
+            SelectMethod="GetTop5Customers"></asp:ObjectDataSource>
+    </div>
+</asp:Content>
